@@ -1,0 +1,14 @@
+:host{
+    position: relative;
+}
+.account-name, .account-avatar{
+    display: inline-block;
+    vertical-align: middle;
+}
+.account-avatar{
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    border: 1px solid saddlebrown;
+    cursor: pointer;
+}
