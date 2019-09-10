@@ -29,7 +29,7 @@ export default {
             styleinject : false,
             extract :false
         }),
-        // gzipPlugin()
+        gzipPlugin()
 
     ],
     output : {
