@@ -1,6 +1,6 @@
 {
   "name": "kwaco-wms",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Wharehose managment system",
   "main": "index.js",
   "scripts": {
