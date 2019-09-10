@@ -1,0 +1,28 @@
+{
+  "name": "kwaco-wms",
+  "version": "1.0.1",
+  "description": "Wharehose managment system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bajustone/kwaco-wms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bajustone/kwaco-wms/issues"
+  },
+  "homepage": "https://github.com/bajustone/kwaco-wms#readme",
+  "devDependencies": {
+    "rollup": "^1.21.2",
+    "rollup-plugin-gzip": "^2.2.0",
+    "rollup-plugin-loadz0r": "^0.7.2",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-terser": "^5.1.1"
+  }
+}
