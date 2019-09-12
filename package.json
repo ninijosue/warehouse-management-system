@@ -23,7 +23,7 @@
   "scripts": {
     "start": "http-server ./build",
     "create-css-dir": "mkdirp build/static/styles",
-    "build-css": "npm run create-css-dir && node ./src/build/build-css.js",
+    "build-css": "npm run create-css-dir && node ./src/build-tasks/build-css.js",
     "build-js": "rollup -c",
     "build-views": "cp -r ./src/views/ ./build/",
     "copy-images": "cp -r ./src/images ./build/static/",
