@@ -1,14 +1,27 @@
-:host{
-    position: relative;
+.profil_bar{
+    float: right;
+    position: absolute;
+    color: #ffffff;
+    margin-left: 65rem;
+    margin-top: -2.5px;
+    z-index: 1;
+    
 }
 .account-name, .account-avatar{
     display: inline-block;
     vertical-align: middle;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px
 }
-.account-avatar{
+
+
+.account-avatar {
     height: 48px;
     width: 48px;
     border-radius: 50%;
-    border: 1px solid saddlebrown;
+    border: 3px solid #1DB6CE;
     cursor: pointer;
+    
+    
+    
 }

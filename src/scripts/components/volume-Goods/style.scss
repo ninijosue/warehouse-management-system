@@ -1,0 +1,68 @@
+.volume_goods{
+    width: 847px;
+    height: 146px;
+    background-color: #4C4C4C;
+    color: #ffffff;
+    margin-top: 27rem;
+    margin-left: 20.9rem;
+    position: absolute;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+
+}
+
+
+.today{
+    position: absolute;
+    // margin-top: 27rem;
+    // margin-left: 23rem;
+    z-index: 1;
+    margin-left: 5rem;
+    margin-top: 1rem
+}
+
+.this_week{
+    position: absolute;
+    margin-left: 17.2rem;
+    margin-top: 1rem
+}
+
+.last_week{
+    position: absolute;
+    margin-left: 30.5rem;
+    margin-top: 1rem
+}
+
+.this_month{
+    position: absolute;
+    margin-left: 43rem;
+    margin-top: 1rem
+    
+}
+
+ h5{
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin-left: 2rem;
+    
+
+}
+
+h4{
+    font-size: 19px;
+    color: #1DB6CE;
+    margin-left: 6px;
+    font-weight: 600
+}
+
+.this_week h5, .last_week h5, .this_month h5{
+    margin-left: 1.3rem
+}
+
+img{
+    position: absolute;
+    width: 20px;
+    margin-left: 6.5rem;
+    margin-top: -3rem
+}

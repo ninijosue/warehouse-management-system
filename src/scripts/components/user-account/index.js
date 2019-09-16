@@ -7,16 +7,20 @@ class UserAccount extends LitElement{
             name: {type: String},
             avatar: {type: String}
         };
-    }
-    constructor(name, avatar){
+    };
+
+     constructor(name, avatar){
         super();
         this.name = name || "";
         this.avatar = avatar;
     }
     render(){
         return html`
-        <span class="account-name">Welcome <b>${this.name}</b></span>
+        <div class="profil_bar">
+        <span class="account-name"><em>Welcome</em> <b>${this.name}</b></span>
         <img class="account-avatar" src="${this.avatar}" alt="user profile picture"/>
+        </div>
+        
         `;
     }
     static get styles(){

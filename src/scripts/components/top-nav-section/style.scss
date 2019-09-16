@@ -1,0 +1,31 @@
+.top_section{
+    width: 17.5rem;
+    height: 17rem;
+    background-color: #3B3B3B;
+    position: absolute;
+    margin-top: -0.5rem;
+    margin-left: -0.6rem;
+}
+
+
+.btn_slider span{
+    display: block;
+    width: 26px;
+    height: 2px;
+    background-color: #1DB6CE !important;
+    z-index: 1;
+    margin-left: 1.3rem;
+    margin-top: 4px;
+    
+    
+}
+
+.btn_slider{
+    position: absolute;
+    margin-top: 1rem;
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+

@@ -1,0 +1,35 @@
+.navigation{
+    position: absolute;
+    z-index: 2;
+    background-color: #777675;
+    font-family: "Roboto", sans-serif;
+    width: 17.5rem;
+    height: 25.35rem;
+    margin-left: -0.6rem;
+    margin-top: 16.5rem;
+    color: #ffffff
+}
+
+ul{
+    margin-left: -4rem;
+    margin-top: -1rem;
+}
+
+ul li{
+padding-left: 8.4rem;
+background-color: #575554;
+margin-top: 2px;
+height: 25px;
+font-size: 15px;
+padding-top: 5px;
+cursor: pointer;
+
+}
+
+img{
+    position: absolute;
+    width: 22px;
+    margin-left: -2.5rem
+
+}
+
