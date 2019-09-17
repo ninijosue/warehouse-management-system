@@ -7,6 +7,7 @@ class topBar extends LitElement{
     render(){
         return html`
         <div class="top_bar">
+            <slot></slot>
         </div>
         `
     };

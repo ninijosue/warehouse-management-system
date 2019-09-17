@@ -18,6 +18,12 @@
         "src/views"
       ],
       "extensions": "html"
+    },
+    "build-css": {
+      "patterns": [
+        "src/styles"
+      ],
+      "extensions": "scss"
     }
   },
   "scripts": {

@@ -1,11 +1,8 @@
-.profil_bar{
-    float: right;
+:host{
     position: absolute;
     color: #ffffff;
-    margin-left: 65rem;
-    margin-top: -2.5px;
     z-index: 1;
-    
+    display: block;
 }
 .account-name, .account-avatar{
     display: inline-block;

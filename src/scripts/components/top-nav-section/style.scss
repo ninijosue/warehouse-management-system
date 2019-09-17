@@ -1,6 +1,6 @@
 .top_section{
-    width: 17.5rem;
-    height: 17rem;
+    width: var(--nav-width);
+    height: var(--top_section-height);
     background-color: #3B3B3B;
     position: absolute;
     margin-top: -0.5rem;

@@ -2,7 +2,7 @@ import {LitElement, html, css, unsafeCSS} from "lit-element";
 import styles from "./style.scss";
 import navigationItems from "../../navigation-list";
 
-class Navigation extends LitElement{
+class navigation extends LitElement{
     
      constructor(){
         super();
@@ -16,14 +16,12 @@ class Navigation extends LitElement{
     }
     render(){
         return html`
-       <div class="navigation">
        <ul>
            ${this.items.map(item=>{
                return html`<list-item icon="${item.icon}">${item.title}</list-item>`
            })}
        
        </ul>
-       </div>
         
         `;
     }
@@ -32,4 +30,4 @@ class Navigation extends LitElement{
     }
 }
 
-export {Navigation};
+export {navigation};

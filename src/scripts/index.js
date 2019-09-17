@@ -7,9 +7,8 @@ import {dashboardInfo} from "./components/dashboard-info/index";
 import {volumeOfGoods} from "./components/volume-Goods/index";
 import {background} from "./components/background/index";
 import {topNavSection} from "./components/top-nav-section/index";
-import {Navigation} from "./components/navigation-section/index";
-import {ListItem} from "./components/list-item/index";
 import {navigation} from "./components/navigation-section/index";
+import {ListItem} from "./components/list-item/index";
 import {fixeRightInfo} from "./components/fixe-right/index";
 import {receiving} from "./components/receiving/index";
 import {bottomFixeGoodsVolume} from "./components/bottom-fixed/index";
@@ -36,7 +35,6 @@ customElements.define('dashboard-info', dashboardInfo);
 customElements.define('volume-goods', volumeOfGoods);
 customElements.define('bg-section', background);
 customElements.define('top-section', topNavSection);
-customElements.define('nav-section', Navigation);
 customElements.define('nav-section', navigation);
 customElements.define('fixe-right', fixeRightInfo);
 customElements.define('receive-goods', receiving);
@@ -60,10 +58,10 @@ customElements.define('well-saved', wellSaved);
 
 render(html`
     
-    <top-bar></top-bar>
-    <bg-section ></bg-section>
-    <user-account name="BAHATI" avatar="https://lh3.googleusercontent.com/-OMOO6vmnUUs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcchOb7oVd84GIMz9CXHX6PuBGN8A.CMID/s64-c/photo.jpg"></user-account>
-    <user-profil profileName="Justin BAHATI" avatar="https://lh3.googleusercontent.com/-OMOO6vmnUUs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcchOb7oVd84GIMz9CXHX6PuBGN8A.CMID/s64-c/photo.jpg" ></user-profil>
+    <top-bar>
+        <user-account class="user-account" name="BAHATI" avatar="https://lh3.googleusercontent.com/-OMOO6vmnUUs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcchOb7oVd84GIMz9CXHX6PuBGN8A.CMID/s64-c/photo.jpg"></user-account>
+    </top-bar>
+    <!-- <user-profil profileName="Justin BAHATI" avatar="https://lh3.googleusercontent.com/-OMOO6vmnUUs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcchOb7oVd84GIMz9CXHX6PuBGN8A.CMID/s64-c/photo.jpg" ></user-profil> -->
     <receive-goods></receive-goods>
     <bottom-bar></bottom-bar>
     <nav-section></nav-section>

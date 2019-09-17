@@ -1,18 +1,19 @@
-.navigation{
+:host{
     position: absolute;
+    display: block;
     z-index: 2;
     background-color: #777675;
     font-family: "Roboto", sans-serif;
-    width: 17.5rem;
-    height: 25.35rem;
-    margin-left: -0.6rem;
-    margin-top: 16.5rem;
-    color: #ffffff
+    width: var(--nav-width);
+    height: 100%;
+    color: #ffffff;
+    top: var(--top_section-height);
 }
 
 ul{
-    margin-left: -4rem;
-    margin-top: -1rem;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
 }
 
 

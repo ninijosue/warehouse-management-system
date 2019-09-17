@@ -1,14 +1,28 @@
-
-
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box; 
 }
- body{
+:root{
+    --nav-width: 280px;
+    --dark-bg-one: #3b3b3b;
+    --top_section-height: 200px;
+}
+html, body{
     width: 100%;
     height: 100%;
-    background-image: url("./static/images/background.jpg");
+}
+ body{
+    background-image: url("/static/images/background.jpg");
    
+}
+.user-account{
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+@media (max-width: 540px) {
+
 }
