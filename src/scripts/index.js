@@ -7,7 +7,8 @@ import {dashboardInfo} from "./components/dashboard-info/index";
 import {volumeOfGoods} from "./components/volume-Goods/index";
 import {background} from "./components/background/index";
 import {topNavSection} from "./components/top-nav-section/index";
-import {navigation} from "./components/navigation-section/index";
+import {Navigation} from "./components/navigation-section/index";
+import {ListItem} from "./components/list-item/index";
 
 
 
@@ -18,6 +19,7 @@ import {navigation} from "./components/navigation-section/index";
 
 
 customElements.define('user-account', UserAccount);
+customElements.define('list-item', ListItem);
 customElements.define('user-profil', UserProfil);
 customElements.define('top-bar', topBar);
 customElements.define('bottom-bar', bottomBar);
@@ -25,7 +27,7 @@ customElements.define('dashboard-info', dashboardInfo);
 customElements.define('volume-goods', volumeOfGoods);
 customElements.define('bg-section', background);
 customElements.define('top-section', topNavSection);
-customElements.define('nav-section', navigation);
+customElements.define('nav-section', Navigation);
 
 
 

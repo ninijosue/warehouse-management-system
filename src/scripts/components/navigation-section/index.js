@@ -1,23 +1,27 @@
 import {LitElement, html, css, unsafeCSS} from "lit-element";
 import styles from "./style.scss";
+import navigationItems from "../../navigation-list";
 
-class navigation extends LitElement{
+class Navigation extends LitElement{
     
      constructor(){
         super();
+        this.items = navigationItems.listItems;
        
+    }
+    static get properties(){
+        return {
+            items: {type: Array, attribute: true}
+        }
     }
     render(){
         return html`
        <div class="navigation">
        <ul>
-       <li class="dashboard"> <img src="/static/images/icons/icons8-dashboard-100-2@2x.png" alt="icon"/> DashBoard</li>
-       <li class="Recieving"> <img src="/static/images/icons/icons8-get-cash-100@2x.png" alt="icon"/> Recieving</li>
-       <li class="Invatory"> <img src="/static/images/icons/icons8-sell-stock-96 (1).png" alt="icon"/> Invatory</li>
-       <li class="Deliver"> <img src="/static/images/icons/icons8-delivered-96.png" alt="icon"/> Deliver</li>
-       <li class="Expense"> <img src="/static/images/icons/icons8-money-pound-30@2x.png" alt="icon"/> Expense</li>
-       <li class="Report"> <img src="/static/images/icons/icons8-business-report-96.png" alt="icon"/> Report </li>
-       <li class="System"> <img src="/static/images/icons/icons8-tune-96.png" alt="icon"/> System</li>
+           ${this.items.map(item=>{
+               return html`<list-item icon="${item.icon}">${item.title}</list-item>`
+           })}
+       
        </ul>
        </div>
         
@@ -28,4 +32,4 @@ class navigation extends LitElement{
     }
 }
 
-export {navigation};
+export {Navigation};
