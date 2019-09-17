@@ -1,0 +1,76 @@
+.info{
+    width: 213.53px;
+    height: 68px;
+    background-color: #4C4C4C;
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    border-radius: 5px;
+    
+    
+}
+
+
+img{
+   
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 165px;
+    position: absolute;
+
+
+}
+
+h2{
+    font-size: 30px;
+    margin-left: 18px;
+    color: #1DB6CE;
+    letter-spacing: 1px;
+    position: absolute;
+    margin-top: 0.6rem;
+
+}
+
+h5{
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-decoration: underline;
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: 18px;
+    font-weight: 200
+    
+
+}
+
+.total_space{
+    margin-left: 71rem;
+    margin-top: 5rem;
+}
+
+.space_used{
+    margin-left: 71rem;
+    margin-top: 10rem;
+}
+
+
+.remaining_space{
+    margin-left: 71rem;
+    margin-top: 15rem;
+}
+
+
+.clients{
+    margin-left: 71rem;
+    margin-top: 20rem;
+}
+
+.expired_bonds{
+    margin-left: 71rem;
+    margin-top: 25rem;
+}
+
+.expired_bonds h2{
+    color: #E34220
+}
