@@ -1,12 +1,13 @@
 .info{
-    width: 213.53px;
-    height: 68px;
+    width: 16%;
+    height: 9%;
     background-color: #4C4C4C;
-    font-family: "Roboto", sans-serif;
     position: absolute;
     border-radius: 5px;
-    
-    
+    right: 1%;
+    top:13%;
+    z-index: 1;
+
 }
 
 
@@ -14,20 +15,22 @@ img{
    
     width: 30px;
     height: 30px;
-    margin-top: 20px;
-    margin-left: 165px;
+    right: 8%;
     position: absolute;
+    top: 20%
 
 
 }
 
 h2{
     font-size: 30px;
-    margin-left: 18px;
+    
     color: #1DB6CE;
     letter-spacing: 1px;
     position: absolute;
-    margin-top: 0.6rem;
+    top: -31%;
+    left: 10%;
+    
 
 }
 
@@ -37,38 +40,31 @@ h5{
     color: #ffffff;
     text-decoration: underline;
     position: absolute;
-    margin-top: 3rem;
-    margin-left: 18px;
-    font-weight: 200
+    font-weight: 200;
+    bottom: -18%;
+    left: 10%;
     
 
 }
 
-.total_space{
-    margin-left: 71rem;
-    margin-top: 5rem;
-}
+
 
 .space_used{
-    margin-left: 71rem;
-    margin-top: 10rem;
+  top: 23%  
 }
 
 
 .remaining_space{
-    margin-left: 71rem;
-    margin-top: 15rem;
+    top: 33%;
 }
 
 
 .clients{
-    margin-left: 71rem;
-    margin-top: 20rem;
+   top: 43%
 }
 
 .expired_bonds{
-    margin-left: 71rem;
-    margin-top: 25rem;
+    top: 53%;
 }
 
 .expired_bonds h2{

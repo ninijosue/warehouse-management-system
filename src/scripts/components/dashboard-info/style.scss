@@ -1,6 +1,6 @@
 .info{
-    width: 269px;
-    height: 110px;
+    width: 19%;
+    height: 16.1%;
     background-color: #4C4C4C;
     font-family: "Roboto", sans-serif;
     position: absolute;
@@ -11,12 +11,12 @@
 
 h4{
     position: absolute;
-    margin-left: 21rem;
-    letter-spacing: 0.7px;
+    left: calc(var(--nav-width) + 5%);
     font-family: "Roboto", sans-serif;
     font-weight: 500;
-    margin-top: 5.5rem;
-    color: #ffffff
+    top: 10%;
+    color: #ffffff;
+    font-size: 17px;
 
 
 }
@@ -26,8 +26,8 @@ img{
    
     width: 30px;
     height: 30px;
-    margin-top: 32px;
-    margin-left: 200px;
+    top: 32%;
+    right: 4%;
     position: absolute; 
 
 
@@ -35,51 +35,49 @@ img{
 
 h2{
     font-size: 35px;
-    margin-left: 18px;
+    left: 8%;
     color: #1DB6CE;
-    letter-spacing: 3px;
     position: absolute;
-    margin-top: 17px;
+    top: -7%;
 
 }
 
 h5{
     font-size: 15px;
-    letter-spacing: 1px;
     color: #ffffff;
     text-decoration: underline;
     position: absolute;
-    margin-top: 70px;
-    margin-left: 18px;
+    top: 33%;
+    left: 8%;
     
 
 }
 
 .total_space{
-    margin-left: 21rem;
-    margin-top: 7rem;
+    left: calc(var(--nav-width) + 5%);
+    top: 18.5%
 }
 
 .space_used{
-    margin-left: 40rem;
-    margin-top: 7rem;
+    left: calc(var(--nav-width) + 27%);
+    top: 18.5%
 }
 
 
 .remaining_space{
-    margin-left: 59rem;
-    margin-top: 7rem;
+    left: calc(var(--nav-width) + 49%);
+    top: 18.5%
 }
 
 
 .clients{
-    margin-left: 21rem;
-    margin-top: 16.1rem;
+    left: calc(var(--nav-width) + 5%);
+    top: 38%;
 }
 
 .expired_bonds{
-    margin-top: 16.1rem;
-    margin-left: 40rem;
+    left: calc(var(--nav-width) + 27%);
+    top: 38%;
 }
 
 .expired_bonds h2{

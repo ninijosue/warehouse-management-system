@@ -16,33 +16,33 @@ class receiving extends LitElement{
         <div class="scroll_section"></div>
         <div class="scroll_bar"></div>
 
-        <h5>Client's Name</h5>
-        <input type="text" class="client_name" />
+        <h5 class="name">Client's Name</h5>
+        <input type="text" placeholder="Enter The Name Of Client"  class="client_name" />
        
 
         
-        <h5>Good's Name</h5>
-        <input type="text" class="good_name" />
+        <h5 class="good">Good's Name</h5>
+        <input type="text" placeholder="Enter The Name Of Goods" class="good_name" />
         
 
       
-        <h5>Qantity</h5>
-        <input type="text" class="quantity" />
+        <h5 class="quantit">Qantity</h5>
+        <input type="text" placeholder="Enter The Quantity Of Goods"   class="quantity" />
         
 
         
-        <h5>Bond Value</h5>
-        <input type="text" class="bond_value" />
+        <h5 class="bond">Bond Value</h5>
+        <input type="text" placeholder="Enter The Value Of The Bond"  class="bond_value" />
     
         
         
-        <h5>Entry Date</h5>
-        <input type="text" class="date" />
+        <h5 class="entry">Entry Date</h5>
+        <input type="text" placeholder="Enter The Entry Date"  class="date" />
         
         
       
-        <h5>Period Of Time</h5>
-        <input type="text" class="period_time" />
+       <h5 class="time">Period Of Time</h5>
+        <input type="text" placeholder="Period Of Time  " class="period_time" />
         
 
         <button class="btn-save">Save</button>

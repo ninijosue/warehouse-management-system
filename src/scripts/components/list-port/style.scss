@@ -1,0 +1,28 @@
+:host{
+    width: 32%;
+    height: 150px;
+    background-color: #3B3B3B;
+    color: #ffffff;
+    position: absolute;
+    border: 1.5px solid #1DB6CE;
+    border-radius: 4px;
+    left: calc(var(--nav-width) + 16%);
+    top: 15%;
+    box-shadow: 0px 20px 20px -15px #000000;
+    cursor: pointer;
+
+}
+
+img{
+    right: 10%;
+    position: absolute;
+    width: 50px;
+    top: 30%;
+}
+
+h2{
+    font-size: 26px;
+    top: 22%;
+    left: 10%;
+    position: absolute;
+}

@@ -1,10 +1,10 @@
 .top_section{
-    width: var(--nav-width);
-    height: var(--top_section-height);
+    // width: var(--nav-width);
+    // height: 10%;
     background-color: #3B3B3B;
     position: absolute;
-    margin-top: -0.5rem;
-    margin-left: -0.6rem;
+    left: 0;
+    top: 0;
 }
 
 
@@ -14,8 +14,9 @@
     height: 2px;
     background-color: #1DB6CE !important;
     z-index: 1;
-    margin-left: 1.3rem;
-    margin-top: 4px;
+    transform: translate(20px, 10px);
+    margin-top: 4px
+    
     
     
 }

@@ -1,13 +1,15 @@
 import {LitElement, html, css, unsafeCSS} from 'lit-element';
 import styles from './style.scss';
 
-class bottomBar extends LitElement{
+class ClientList extends LitElement{
    
     
     render(){
         return html`
-        <div class="bottom_bar">
-        </div>
+       <div class="list">
+       <h2>List</h2>
+       <img src="/static/images/icons/icons8-list-96.png"
+       </div>
         `
     };
 
@@ -16,4 +18,4 @@ class bottomBar extends LitElement{
     };
 };
 
-export {bottomBar};
+export {ClientList};

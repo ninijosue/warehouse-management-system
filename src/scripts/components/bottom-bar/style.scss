@@ -1,11 +1,12 @@
-.top_bar{
-    width: 68rem;
+:host{
+    width: calc( 100% - var(--nav-width));
     height: 4rem;
-    background-color: #575554 ;
-    margin-left: 16.9rem;    
+    background-color: #575554 !important;
+    bottom: 0%;
     position: absolute;
-    margin-top: 37.87rem;
-    background-attachment: fixed;
+    right: 0;
+    // background-attachment: fixed;
+    z-index: 3;
     
    
 

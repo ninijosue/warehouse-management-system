@@ -13,7 +13,12 @@ html, body{
     height: 100%;
 }
  body{
-    background-image: url("/static/images/background.jpg");
+    background-image: url("../../static/images/background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Roboto", sans-serif;
+    background-color: #3B3B3B;
+    overflow: hidden;
    
 }
 .user-account{
