@@ -1,0 +1,129 @@
+.client_info_section{
+    position: absolute;
+    width: 70%;
+    height: 60%;
+    left: calc(var(--nav-width) + 5%);
+    top: 13.4%;
+    background-color: #3B3B3B;
+    color: #ffffff
+}
+
+.top{
+    position: absolute;
+    background-color: #1DB6CE;
+    width: 100%;
+    height: 8%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px
+
+}
+
+.top img{
+    width: 2.2%;
+    height: 60%;
+    height: auto;
+    position: absolute;
+    padding-top: 0.38%;
+    cursor: pointer;
+}
+
+.top .delete{
+    left: 8%;
+}
+
+.top .edit{
+    left: 3.1%;
+    padding-top: 0.45%;
+}
+
+.back{
+    z-index: 3;
+    position: absolute;
+    left: 4.3%;
+    top: 11%;
+    width: 4%;
+    height: 4%
+}
+
+h3{
+    position: absolute;
+    right: 1.7%;
+    top: 6%;
+    font-weight: 200;
+}
+
+table{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    height: 6%;
+    border-collapse: collapse;
+    
+}
+
+
+table img{
+    width: 1.2%;
+    height: 8%;
+    position: absolute;
+    margin-left: 3%;
+    top: 8.1%;
+    display: none;
+   
+}
+
+ td, th {
+    border-right: 3px solid rgb(255, 255, 255);
+    
+  }
+
+tr th{
+    text-align: left;
+    padding-left: 1%;
+    font-weight: 200;
+    text-transform: capitalize;
+    // border-right: 4px solid rgba($color: #ffffff, $alpha: 0.41);
+    height: 20px;
+    background-color: #3B3B3B;
+    border-right: none;
+
+}
+tr{
+    background-color: #777675;
+    
+
+}
+
+
+tr th{
+    font-size: 14px;
+    left: 0;
+
+
+}
+
+
+tr td{
+    font-size: 14px;
+    font-weight: 100;
+    padding-left: 1%;
+    margin-top: 120px;
+    border-top: 2px solid #3B3B3B;
+    cursor: pointer;
+    
+
+}
+
+tr:hover{
+    background-color: #1DB6CE;
+    transition: 0.5s all;
+}
+
+
+.scroll{
+    overflow: scroll;
+    height: 60%;
+}
+
+
+

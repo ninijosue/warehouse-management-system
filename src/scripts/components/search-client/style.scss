@@ -1,0 +1,36 @@
+
+.search_section{
+    background-color: #6F6D6C;
+    position: absolute;
+    left: calc(var(--nav-width) + 40.5%);
+    top: 21%;
+    z-index: 3;
+    border: none;
+    border-radius: 2px;
+    width: 20%;
+    height: 6.8%
+}
+input{
+    width: 80%;
+    height:100% ;
+    background-color: #6F6D6C;
+    padding-left: 6px;
+    font-size: 14px;
+    z-index: 2;
+    border: none;
+    color: #ffffff;
+    
+}
+hr{
+    position: absolute;
+    width: 80%;
+    top: 50%
+}
+img{
+    position: absolute;
+    top: 2%;
+    width: 17%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+}

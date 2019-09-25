@@ -15,6 +15,12 @@ import {wellSaved} from "./components/well-saved/index";
 import {ClientList} from "./components/list-port/index";
 import {PutAway} from "./components/put-away-port/index";
 import {ListSection} from "./components/clients-list/index";
+import {search} from "./components/search-client/index";
+import {ClientInfoFromList} from "./components/clients-info-detail/index";
+
+
+
+
 
 
 
@@ -48,6 +54,10 @@ customElements.define('well-saved', wellSaved);
 customElements.define('client-list', ClientList);
 customElements.define('put-away', PutAway);
 customElements.define('list-content', ListSection);
+customElements.define('search-client', search);
+customElements.define('client-info-detail', ClientInfoFromList);
+
+
 
 
 
@@ -79,14 +89,16 @@ render(html`
     <nav-section></nav-section>
 
     
-   <!--- <client-list></client-list>
-    <put-away></put-away> ---->
+   <client-list></client-list>
+    <put-away></put-away> 
      
-  <list-content></list-content>
+    <!--- <client-info-detail></client-info-detail>--->
 
-    <fixe-right totalSpace="1000" spaceUsed="700" remaingSpace="300" clients="150" expiredBonds="50" ></fixe-right>
+  <!---- <search-client></search-client> --->
+
+     <fixe-right totalSpace="1000" spaceUsed="700" remaingSpace="300" clients="150" expiredBonds="50" ></fixe-right> 
     <top-section></top-section>
-    <!-- <bottom-fixed today="1,567,340" thisWeek="1,567,340" lastWeek="1,289,455" thisMonth="23,067,502"></bottom-fixed>-->
+   <bottom-fixed today="1,567,340" thisWeek="1,567,340" lastWeek="1,289,455" thisMonth="23,067,502"></bottom-fixed>
   <bottom-bar></bottom-bar>
     
     
@@ -98,3 +110,4 @@ render(html`
       // <well-saved></well-saved> 
 // <dashboard-info totalSpace="1000" spaceUsed="700" remaingSpace="300" clients="150" expiredBonds="50" ></dashboard-info>
 //<volume-goods today="1,567,340" thisWeek="1,567,340" lastWeek="1,289,455" thisMonth="23,067,502"></volume-goods>
+//<list-content></list-content>

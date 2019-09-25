@@ -16,6 +16,7 @@
     top: 3%;
     left: 3%;
     position: absolute;
+    cursor: pointer;
 
 }
 
@@ -40,6 +41,7 @@ h5{
     position: absolute;
     right: 3%;
     top: 12%;
+    cursor: pointer;
 
 }
 
@@ -82,7 +84,11 @@ h4{
     cursor: pointer;
     
 }
-
+.lists{
+    overflow: auto;
+    z-index: 3;
+    height: 84.9%;
+}
 .lists ul li:hover{
     background-color: #1DB6CE;
     transition: 0.5s all ;

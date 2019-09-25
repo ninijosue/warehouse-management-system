@@ -1,9 +1,21 @@
 import {LitElement, html, css, unsafeCSS} from 'lit-element';
 import styles from './style.scss';
+import clientListData from "../../client-hostory-list";
+
 
 class ListSection extends LitElement{
+
+    static get properties(){
+        return{
+            clientList: {type: Array}
+        }
+    }
+        
     constructor(){
         super();
+        this.clientList = clientListData.clientList;
+        
+        
     }
    
     
@@ -22,9 +34,9 @@ class ListSection extends LitElement{
         </div>
         <div class="lists">
         <ul>
-        <li>HNH RADING Ltd</li>
-        <li>HNH RADING Ltd</li>
-
+        ${this.clientList.map(client => {
+            return html`<li>${client.client}</li>`
+        })}
         </ul>
         </div>
         </div>
@@ -38,3 +50,6 @@ class ListSection extends LitElement{
 };
 
 export {ListSection};
+
+// <li>HNH RADING Ltd</li>
+//         <li>HNH RADING Ltd</li>
