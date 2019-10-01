@@ -3,8 +3,18 @@ import {LitElement, html, css, unsafeCSS } from "lit-element";
 class ListItem extends LitElement{
     constructor(){
         super();
-        this._clicked = this._clicked.bind(this);
         this._mainSection = document.querySelector("main-section");
+        this._clicked = this._clicked.bind(this);
+        this._oncurrentsectionchange = this._oncurrentsectionchange.bind(this);
+        this._mainSection.state.subscribe(this._oncurrentsectionchange)
+
+    }
+    _oncurrentsectionchange(){
+        if(this._mainSection.state.currentSection != this.name) {
+            this.setAttribute('active', false);
+        }
+        else this.setAttribute('active', true);
+        
     }
     static get properties(){
         return {
@@ -16,10 +26,7 @@ class ListItem extends LitElement{
         return css`${unsafeCSS(styles)}`;
     }
     _clicked(){
-        window.location.hash = this.name;
-        window.history.replaceState({section: this.name}, this.name, window.location.href);
-        this._mainSection.activeSection = this.name;
-
+        this._mainSection.state.currentSection = this.name
         
     }
     render(){

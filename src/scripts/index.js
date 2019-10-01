@@ -1,3 +1,6 @@
+import {MainSectionState} from './helpers/utils';
+
+
 import {UserAccount} from "./components/user-account/index"; 
 import {html, render} from "lit-html";
 import {UserProfil}  from "./components/userProfit/index";
@@ -120,7 +123,7 @@ customElements.define('user-customization', UserCustomization);
 customElements.define('create-user', CreateUser);
 customElements.define('user-well-created', UserWellCreated);
 
-
+const mainPageSection = document.querySelector('#main_page_section');
 
 
 
@@ -140,15 +143,21 @@ customElements.define('user-well-created', UserWellCreated);
 
 
 window.onpopstate = function(evt){
-  const _mainSection = document.querySelector('main-section');
-  _mainSection.activeSection = !!window.location.hash ? window.location.hash.substring(1) : _mainSection.activeSection;
-  
-  
+  if(!mainPageSection) return;
+  mainPageSection.activeSection = !!window.location.hash ? window.location.hash.substring(1) : mainPageSection.activeSection;
 }
 class MainSection extends LitElement{
   constructor(){
     super();
     this.activeSection = !!window.location.hash ? window.location.hash.substring(1) : "dashboard"
+    this.state = new MainSectionState({currentSection: this.activeSection});
+    this._oncurrentsectionchange = this._oncurrentsectionchange.bind(this);
+    this.state.subscribe(this._oncurrentsectionchange);
+    
+  }
+  _oncurrentsectionchange(){
+    this.activeSection = this.state.currentSection;
+    window.location = "#"+this.state.currentSection;
   }
   static get properties(){
     return {
@@ -158,6 +167,9 @@ class MainSection extends LitElement{
   createRenderRoot() { 
     return this;
   }
+
+ 
+
   render(){
     return html`
     
@@ -216,7 +228,7 @@ class MainSection extends LitElement{
 
 customElements.define('main-section', MainSection);
 
-render(html`<main-section></main-section>`, document.body);
+// render(html`<main-section id="main_page_section"></main-section>`, document.body);
 
     
       // ------------- finished that might be hiden----------------------

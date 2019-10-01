@@ -1,3 +1,8 @@
+:host([active=true] ){
+    li{
+         background-color: var(--main-blue);
+    }
+}
 li{
     padding-left: 80px;
     background-color: #575554;
@@ -6,8 +11,8 @@ li{
     font-size: 15px;
     padding-top: 5px;
     cursor: pointer;
-    
 }
+
     
 img{
     position: absolute;
