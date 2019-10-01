@@ -1,0 +1,38 @@
+
+
+.report{
+    left: calc(var(--nav-width) + 15%);
+    width: 32%;
+    background-color: #3B3B3B;
+    border: 2px solid #D17B0C;
+    top: 30%;
+    z-index: 3;
+    position: absolute;
+    font-size: 18px;
+    color: #ffffff;
+    border-radius: 5px;
+    height: 21%;
+    box-shadow: 0px 14px 14px -10px #000000;
+    cursor: pointer;
+
+}
+
+
+.img_report{
+    width: 20%;
+    right: 10%;
+    position: absolute;
+    top: 28%;
+
+}
+
+.h2_report{
+    font-size: 26px;
+    text-transform: capitalize;
+    position: absolute;
+    top: 28%;
+    left: 12%;
+    
+
+}
+

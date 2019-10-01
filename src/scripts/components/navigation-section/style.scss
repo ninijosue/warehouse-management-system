@@ -17,4 +17,10 @@ ul{
 }
 
 
+@media (max-width: 540px) {
+    :host{
+        display: none
+    }
+}
+
 

@@ -1,0 +1,107 @@
+.sammary_input_section{
+    position: absolute;
+    left: calc(var(--nav-width) + 10%);
+    background-color: #3B3B3B;
+    border: 2px solid #1DB6CE;
+    border-radius: 5px;
+    color: #ffffff;
+    width: 46%;
+    z-index: 3;
+    height: 63%;
+    top: 13%
+}
+
+img{
+    width: 6%;
+    height: 4%;
+    left: 2%;
+    top: 5%;
+    position: absolute;
+
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    top: -1%;
+    left: 13%;
+    
+}
+
+h4{
+    top: 32%;
+    position: absolute;
+    left: 13%;
+    font-weight: 200;
+    font-size: 20px;
+
+}
+
+h6{
+    font-size: 13px;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    font-weight: 200;
+
+}
+
+input{
+    width: 60%;
+    height: 9%;
+    background-color: #6F6D6C;
+    color: #ffffff;
+    border-radius: 2px;
+    border: none;
+    padding-left: 4px;
+    position: absolute;
+    top: 48%;
+    left: 13%;
+    
+}
+
+input::placeholder{
+    color: #ffffff;
+    padding-left: 2px
+}
+.top_line{
+    position: absolute;
+    display: block;
+    z-index: 3;
+    width: 100%;
+    border: none;
+    height: 1.5px;
+    background-color: #707070;
+    top: 25%;
+    
+}
+
+.under_input{
+    position: absolute;
+    top: 52.8%;
+    width: 58.7%;
+    left: 14%;
+    border: none;
+    background-color: #ffffffa1;
+    height: 1px
+}
+
+button{
+    position: absolute;
+    width: 22%;
+    height: 37.27px;
+    background-color: #1DB6CE;
+    border: none;
+    top: 62%;
+    left: 51.7%;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+button:hover{
+    background-color: rgb(125, 127, 128);
+    transition: 0.5s all
+}

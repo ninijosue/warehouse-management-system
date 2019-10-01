@@ -1,0 +1,98 @@
+.section{
+    background-color: #3B3B3B;
+    color: #ffffff;
+    border: 2.2px solid #777675;
+    position: absolute;
+    left: calc(var(--nav-width) + 5% );
+    top: 13%;
+    width: 47%;
+    height: 65%;
+    border-radius: 5px;
+    overflow: auto;
+    box-shadow: 0px 30px 20px -30px #000
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25%;
+    
+}
+
+
+tr {
+    height: 55px;
+    padding-left: 7px
+
+}
+
+
+tr th{
+    text-align: left;
+    text-transform: capitalize;
+    padding-left: 30px;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+
+tr td{
+    border-top: 2px solid #707070; 
+    border-bottom: 2px solid #707070;
+    z-index: 3;
+    text-align: left;
+    padding-left: 30px;
+    font-size: 13px;
+    text-transform: capitalize;
+    cursor: pointer;
+    
+
+}
+
+
+h3{
+    font-size: 15px;
+    font-weight: 200;
+    text-transform: capitalize;
+    position: absolute;
+    top: -8%;
+}
+
+
+h2{
+    font-size: 20px;
+    font-weight: 100;
+    position: absolute;
+    left: 7%;
+    top: 0;
+}
+
+
+h5{
+    font-weight: 200;
+    font-size: 12px;
+    margin-left: 7%;
+    margin-top: 11%;
+}
+
+.remove{
+    position: absolute;
+    right: 5%;
+    top: 25%;
+    cursor: pointer;
+}
+
+.add_new{
+    position: absolute;
+    right: 20%;
+    top: 25%;
+    cursor: pointer;
+}
+
+.go{
+    width: 2.2%;
+    height: 4.5%;
+    position: absolute;
+    right: 5.5%;
+}

@@ -1,0 +1,50 @@
+
+.location_bg{
+    top: 13%;
+    width: 56%;
+    z-index: 2;
+    color: #ffffff;
+    height: 60%;
+    position: absolute;
+    background-color: #2E2C2C;
+    left: calc(var(--nav-width) + 5%);
+    border-radius: 4px;
+    box-shadow: 0px 50px 50px -60px #000000;
+}
+.location{
+
+    width: 70%;
+    height: 45%;
+    top: 30%;
+    left: 16%; 
+    background-color: #3B3B3B;
+    color: #ffffff;
+    position: absolute;
+    border: 1.5px solid #D17B0C;
+    border-radius: 4px;
+    box-shadow: 0px 20px 20px -15px #000000;
+    
+
+}
+
+img{
+    right: 10%;
+    position: absolute;
+    width: 50px;
+    top: 30%;
+}
+
+h2{
+    font-size: 60px;
+    top: 0;
+    left: 10%;
+    position: absolute;
+}
+
+h3{
+    position: absolute;
+    top: 14%;
+    left: 20%;
+    font-size: 18px;
+    font-weight: 100;
+}
