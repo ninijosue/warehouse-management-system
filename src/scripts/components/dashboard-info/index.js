@@ -69,6 +69,8 @@ class dashboardInfo extends LitElement{
 
         </div>
         </div>
+    <volume-goods today="1,567,340" thisWeek="1,567,340" lastWeek="1,289,455" thisMonth="23,067,502"></volume-goods>
+
         `
     };
 

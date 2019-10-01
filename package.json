@@ -33,7 +33,7 @@
     "build-js": "rollup -c",
     "build-views": "cp -r ./src/views/ ./build/",
     "copy-images": "cp -r ./src/images ./build/static/",
-    "build": "npm run build-views && npm run build-js && npm run build-css && npm run copy-images",
+    "build": "rm -r build && mkdir build && npm run build-views && npm run build-js && npm run build-css && npm run copy-images",
     "watch": "npm-watch"
   },
   "repository": {

@@ -194,9 +194,7 @@ class MainSection extends LitElement{
   <!---- <search-client></search-client> --->
 
      <!-- <fixe-right totalSpace="1000" spaceUsed="700" remaingSpace="300" clients="150" expiredBonds="50" ></fixe-right>  -->
-    <volume-goods today="1,567,340" thisWeek="1,567,340" lastWeek="1,289,455" thisMonth="23,067,502"></volume-goods>
 
-   <!-- <bottom-fixed today="1,567,340" thisWeek="1,567,340" lastWeek="1,289,455" thisMonth="23,067,502"></bottom-fixed> -->
   <bottom-bar></bottom-bar>
      
     
