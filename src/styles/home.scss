@@ -21,6 +21,18 @@ html, body{
     overflow: hidden;
    
 }
+main-section{
+    display: block;
+}
+.main-section{
+    opacity: 0;
+    pointer-events: none;
+    display: block;
+}
+.main-section[active="true"]{
+    opacity: 1;
+    pointer-events: auto;
+}
 .user-account{
     right: 24px;
     top: 50%;

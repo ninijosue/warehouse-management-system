@@ -35,7 +35,7 @@ class navigation extends LitElement{
         return html`
        <ul>
            ${this.items.map((item) =>{
-               return html`<list-item @click="${() => this.checkWhat(item)}" icon="${item.icon}">${item.title}</list-item>`;
+               return html`<list-item  name="${item.name}" icon="${item.icon}">${item.title}</list-item>`;
 
 
            })}

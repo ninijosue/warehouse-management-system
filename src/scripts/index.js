@@ -3,7 +3,7 @@ import {html, render} from "lit-html";
 import {UserProfil}  from "./components/userProfit/index";
 import {topBar} from "./components/top-bar/index";
 import {bottomBar} from "./components/bottom-bar/index";
-// import {dashboardInfo} from "./components/dashboard-info/index";
+import {dashboardInfo} from "./components/dashboard-info/index";
 import {volumeOfGoods} from "./components/volume-Goods/index";
 import {topNavSection} from "./components/top-nav-section/index";
 import {navigation} from "./components/navigation-section/index";
@@ -38,6 +38,7 @@ import { Users } from "./components/setting-user-Acceil";
 import { UserCustomization } from "./components/user-customization";
 import { CreateUser } from "./components/create-user";
 import { UserWellCreated } from "./components/user-well-created";
+import { LitElement } from "lit-element";
 
 
 
@@ -84,7 +85,7 @@ customElements.define('list-item', ListItem);
 customElements.define('user-profil', UserProfil);
 customElements.define('top-bar', topBar);
 customElements.define('bottom-bar', bottomBar);
-// customElements.define('dashboard-info', dashboardInfo);
+customElements.define('dashboard-info', dashboardInfo);
 customElements.define('volume-goods', volumeOfGoods); 
 customElements.define('top-section', topNavSection);
 customElements.define('nav-section', navigation);
@@ -138,30 +139,34 @@ customElements.define('user-well-created', UserWellCreated);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-render(html`
+window.onpopstate = function(evt){
+  const _mainSection = document.querySelector('main-section');
+  _mainSection.activeSection = !!window.location.hash ? window.location.hash.substring(1) : _mainSection.activeSection;
+  
+  
+}
+class MainSection extends LitElement{
+  constructor(){
+    super();
+    this.activeSection = !!window.location.hash ? window.location.hash.substring(1) : "dashboard"
+  }
+  static get properties(){
+    return {
+      activeSection: {type: String, reflect: true, attribute: "current-section"}
+    };
+  }
+  createRenderRoot() { 
+    return this;
+  }
+  render(){
+    return html`
     
     <top-bar>
     <!-- <user-profil profileName="Justin BAHATI" avatar="https://lh3.googleusercontent.com/-OMOO6vmnUUs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcchOb7oVd84GIMz9CXHX6PuBGN8A.CMID/s64-c/photo.jpg" ></user-profil> -->
         
     <user-account class="user-account" name="BAHATI" avatar="https://lh3.googleusercontent.com/-OMOO6vmnUUs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcchOb7oVd84GIMz9CXHX6PuBGN8A.CMID/s64-c/photo.jpg"></user-account>
     </top-bar>
-    <!--- <receive-goods></receive-goods> --->
+    
     <nav-section></nav-section>
  
     
@@ -172,9 +177,15 @@ render(html`
 
     <!---<sammary-client-name></sammary-client-name>-->
 
-    
-    
+    <!-- <receive-goods></receive-goods>  -->
+    <div id="main_section" current-section="${this.activeSection}">
+      <dashboard-info class="main-section" active=${"dashboard" == this.activeSection} totalSpace="1000" spaceUsed="700" remaingSpace="300" clients="150" expiredBonds="50" ></dashboard-info>
+      <receive-goods class="main-section" active=${"receiving" == this.activeSection}></receive-goods> 
+      <!-- <list-content class="main-section" active = ${"inventory" == this.activeSection}></list-content> -->
+      <putaway-location class="main-section" active =${"inventory" == this.activeSection}></putaway-location>
 
+    </div>
+    
   
      <!---<main-report></main-report> --->
     <!--- <client-info-detail></client-info-detail>--->
@@ -182,13 +193,32 @@ render(html`
 
   <!---- <search-client></search-client> --->
 
-     <fixe-right totalSpace="1000" spaceUsed="700" remaingSpace="300" clients="150" expiredBonds="50" ></fixe-right> 
-   <bottom-fixed today="1,567,340" thisWeek="1,567,340" lastWeek="1,289,455" thisMonth="23,067,502"></bottom-fixed>
+     <!-- <fixe-right totalSpace="1000" spaceUsed="700" remaingSpace="300" clients="150" expiredBonds="50" ></fixe-right>  -->
+    <volume-goods today="1,567,340" thisWeek="1,567,340" lastWeek="1,289,455" thisMonth="23,067,502"></volume-goods>
+
+   <!-- <bottom-fixed today="1,567,340" thisWeek="1,567,340" lastWeek="1,289,455" thisMonth="23,067,502"></bottom-fixed> -->
   <bottom-bar></bottom-bar>
      
     
-    `
-    , document.body);
+    `;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+customElements.define('main-section', MainSection);
+
+render(html`<main-section></main-section>`, document.body);
 
     
       // ------------- finished that might be hiden----------------------

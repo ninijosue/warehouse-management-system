@@ -2,31 +2,39 @@ export default {
     listItems: [
         {
             icon:"/static/images/icons/icons8-dashboard-100-2@2x.png",
-            title:"DashBoard"
+            title:"DashBoard",
+            name: "dashboard"
+
         },
         {
             icon: "/static/images/icons/icons8-get-cash-100@2x.png",
-            title: "Receiving"
+            title: "Receiving",
+            name: "receiving"
         },
         {
             icon: "/static/images/icons/icons8-sell-stock-96 (1).png",
-            title: "Invatory"
+            title: "Invatory",
+            name: "inventory"
         },
         {
             icon:"/static/images/icons/icons8-delivered-96.png",
-            title:"Deliver"
+            title:"Deliver",
+            name: "deliver"
         },
         {
             icon:"/static/images/icons/icons8-money-pound-30@2x.png",
-            title:"Expense"
+            title:"Expense",
+            name: "expense"
         },
         {
             icon:"/static/images/icons/icons8-business-report-96.png",
-            title:"Report"
+            title:"Report",
+            name: "report"
         },
         {
             icon:"/static/images/icons/icons8-tune-96.png",
-            title:"System"
+            title:"System",
+            name: "system"
         }
     ]
 }
