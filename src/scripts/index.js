@@ -16,7 +16,6 @@ import {receiving} from "./components/receiving/index";
 import {bottomFixeGoodsVolume} from "./components/bottom-fixed/index";
 import {wellSaved} from "./components/well-saved/index";
 import {ClientList} from "./components/list-port/index";
-import {PutAway} from "./components/put-away-port/index";
 import {ListSection} from "./components/clients-list/index";
 import {search} from "./components/search-client/index";
 import {ClientInfoFromList} from "./components/clients-info-detail/index";
@@ -42,6 +41,7 @@ import { UserCustomization } from "./components/user-customization";
 import { CreateUser } from "./components/create-user";
 import { UserWellCreated } from "./components/user-well-created";
 import { LitElement } from "lit-element";
+import { Print } from './components/search-date-info-to-print';
 
 
 
@@ -97,7 +97,6 @@ customElements.define('receive-goods', receiving);
 customElements.define('bottom-fixed', bottomFixeGoodsVolume);
 customElements.define('well-saved', wellSaved);
 customElements.define('client-list', ClientList);
-customElements.define('put-away', PutAway);
 customElements.define('list-content', ListSection);
 customElements.define('search-client', search);
 customElements.define('client-info-detail', ClientInfoFromList);
@@ -122,6 +121,8 @@ customElements.define('users-clicked', Users);
 customElements.define('user-customization', UserCustomization);
 customElements.define('create-user', CreateUser);
 customElements.define('user-well-created', UserWellCreated);
+customElements.define('print-list-of-entredata-inventory', Print);
+
 
 const mainPageSection = document.querySelector('#main_page_section');
 
@@ -149,10 +150,18 @@ window.onpopstate = function(evt){
 class MainSection extends LitElement{
   constructor(){
     super();
-    this.activeSection = !!window.location.hash ? window.location.hash.substring(1) : "dashboard"
+    this.activeSection = !!window.location.hash ? window.location.hash.substring(1) : "dashboard";
     this.state = new MainSectionState({currentSection: this.activeSection});
     this._oncurrentsectionchange = this._oncurrentsectionchange.bind(this);
     this.state.subscribe(this._oncurrentsectionchange);
+    this.getInventoryLists = !!window.location.hash ? window.location.hash.substring(1) : "dashboard";
+    this.displayOn = "on";
+    this.displayOff = "off";
+    
+    
+    
+    
+    
     
   }
   _oncurrentsectionchange(){
@@ -161,16 +170,42 @@ class MainSection extends LitElement{
   }
   static get properties(){
     return {
-      activeSection: {type: String, reflect: true, attribute: "current-section"}
+      activeSection: {type: String, reflect: true, attribute: "current-section"},
+      fixed : {type: String, reflect: true}
+
     };
   }
   createRenderRoot() { 
     return this;
   }
 
- 
+  
 
   render(){
+    const dashboard = "dashboard";
+    const clientInfo = "inventory/choooseClient/clientInfo";
+    const choooseClientInventory = "inventory/chooseClient";
+    const sectionOn = this.activeSection;
+     if (sectionOn == dashboard ) {
+      var turnOff = this.displayOff;
+      
+     }else if (sectionOn == dashboard ) {
+      var turnOffFixedRight = this.displayOff
+     }
+     else if (sectionOn == clientInfo) {
+      var turnOffFixedRight = this.displayOff
+      var turnOn = this.displayOn
+     }
+     else if (sectionOn == choooseClientInventory ) {
+      var turnOff = this.displayOff;
+      var turnOnFixedRigth = this.displayOn;
+     }
+    else{
+      var turnOn = this.displayOn
+      var turnOnFixedRigth = this.displayOn;
+    }
+
+    
     return html`
     
     <top-bar>
@@ -182,10 +217,10 @@ class MainSection extends LitElement{
     <nav-section></nav-section>
  
     
-   <!---- <client-list></client-list>
+   <!---- 
     <put-away></put-away> --->
 
-    <!---<report-clicked></report-clicked>-->
+    <!-- <report-clicked></report-clicked> -->
 
     <!---<sammary-client-name></sammary-client-name>-->
 
@@ -194,8 +229,18 @@ class MainSection extends LitElement{
       <dashboard-info class="main-section" active=${"dashboard" == this.activeSection} totalSpace="1000" spaceUsed="700" remaingSpace="300" clients="150" expiredBonds="50" ></dashboard-info>
       <receive-goods class="main-section" active=${"receiving" == this.activeSection}></receive-goods> 
       <!-- <list-content class="main-section" active = ${"inventory" == this.activeSection}></list-content> -->
-      <putaway-location class="main-section" active =${"inventory" == this.activeSection}></putaway-location>
-
+      <!-- <putaway-location class="main-section" active =${"inventory" == this.activeSection}></putaway-location> -->
+      <client-list class="main-section" active =${"inventory" == this.activeSection}></client-list>
+      <fixe-right class="main-section" fixed=${"on" == turnOnFixedRigth || turnOffFixedRight } totalSpace="1000" spaceUsed="700" remaingSpace="300" clients="150" expiredBonds="50" ></fixe-right>
+      <bottom-fixed class="main-section" fixed=${"on"== turnOn || turnOff} today="1,567,340" thisWeek="1,567,340" lastWeek="1,289,455" thisMonth="23,067,502"></bottom-fixed>
+      <list-content class="main-section" active = ${"inventory/chooseClient" == this.activeSection}></list-content>
+      <putaway-location class="main-section" active=${"inventory/location" == this.activeSection}></putaway-location>
+      <expense-monthly-reccord-client class="main-section" fixed=${"expense" == this.activeSection}></expense-monthly-reccord-client>
+      <deliver-cliked class="main-section" active=${"deliver" == this.activeSection}></deliver-cliked>
+      <report-clicked class="main-section" active=${"report" == this.activeSection}></report-clicked>
+      <setting-clicked class="main-section" active=${"system" == this.activeSection}></setting-clicked> 
+      <client-info-detail class="main-section" active=${"inventory/choooseClient/clientInfo" == this.activeSection}></client-info-detail>
+      <print-list-of-entredata-inventory class="main-section"  active=${"inventory/choooseClient/clientInfo/print_inventory_list" == this.activeSection}></print-list-of-entredata-inventory>
     </div>
     
   
@@ -205,7 +250,7 @@ class MainSection extends LitElement{
 
   <!---- <search-client></search-client> --->
 
-     <!-- <fixe-right totalSpace="1000" spaceUsed="700" remaingSpace="300" clients="150" expiredBonds="50" ></fixe-right>  -->
+    
 
   <bottom-bar></bottom-bar>
      
@@ -237,7 +282,6 @@ customElements.define('main-section', MainSection);
 //<volume-goods today="1,567,340" thisWeek="1,567,340" lastWeek="1,289,455" thisMonth="23,067,502"></volume-goods>
 //<list-content></list-content>
 //<delete-section></delete-section>
-//<client-list-edit></client-list-edit>
 //<putaway-location></putaway-location>
 // <space-used-client-search></space-used-client-search>
 //<expense-monthly-reccord-client></expense-monthly-reccord-client>

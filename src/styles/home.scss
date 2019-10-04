@@ -34,6 +34,11 @@ main-section{
     opacity: 1;
     pointer-events: auto;
 }
+
+.main-section[fixed = "true"]{
+    opacity: 1;
+    pointer-events: auto;
+}
 .user-account{
     right: 24px;
     top: 50%;

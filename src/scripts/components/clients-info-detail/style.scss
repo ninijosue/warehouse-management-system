@@ -1,18 +1,20 @@
 .client_info_section{
     position: absolute;
-    width: 70%;
-    height: 60%;
+    width: 67%;
+    height: 66%;
     left: calc(var(--nav-width) + 5%);
     top: 13.4%;
     background-color: #3B3B3B;
-    color: #ffffff
+    color: #ffffff;
+    overflow: auto;
+    box-shadow: 0px 24px 20px -22px #000000
 }
 
 .top{
     position: absolute;
     background-color: #1DB6CE;
     width: 100%;
-    height: 8%;
+    height: 6%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px
 
@@ -25,6 +27,7 @@
     position: absolute;
     padding-top: 0.38%;
     cursor: pointer;
+    
 }
 
 .top .delete{
@@ -48,16 +51,15 @@
 h3{
     position: absolute;
     right: 1.7%;
-    top: 6%;
+    top: 4%;
     font-weight: 200;
 }
 
 table{
-    position: absolute;
-    top: 30%;
     width: 100%;
-    height: 6%;
     border-collapse: collapse;
+    margin-top: 15%;
+    
     
 }
 
@@ -71,36 +73,34 @@ table img{
     display: none;
    
 }
-
- td, th {
-    border-right: 3px solid rgb(255, 255, 255);
-    
-  }
-
-tr th{
-    text-align: left;
-    padding-left: 1%;
-    font-weight: 200;
-    text-transform: capitalize;
-    // border-right: 4px solid rgba($color: #ffffff, $alpha: 0.41);
-    height: 20px;
-    background-color: #3B3B3B;
-    border-right: none;
-
-}
 tr{
     background-color: #777675;
-    
-
+    height: 30px;
+    border-top: 6px solid #3B3B3B;
+    padding-left: 7px
 }
 
-
-tr th{
+ tr th {
+    text-align: left;
+    text-transform: capitalize;
+    padding-left: 10px;
     font-size: 14px;
-    left: 0;
+    background-color: #3B3B3B;
+    letter-spacing: 0.6px
+  }
 
+tr td{
+    border-left: 1px solid #ffffff6c;
+    z-index: 3;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 14px
 
 }
+
+
+
+
 
 
 tr td{
@@ -109,15 +109,38 @@ tr td{
     padding-left: 1%;
     margin-top: 120px;
     border-top: 2px solid #3B3B3B;
-    cursor: pointer;
+    
     
 
 }
 
-tr:hover{
-    background-color: #1DB6CE;
-    transition: 0.5s all;
+.print{
+    position: absolute;
+    right: 3%;
+    top: 15%;
+    width: 103px;
+    background-color: #1db6ce;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    height: 32px;
+    font-size: 16px;
+    text-transform: capitalize;
+    border-radius: 4px;
+    letter-spacing: 1px;
+   
 }
+
+.print:hover{
+    box-shadow: 0px 10px 20px -7px #000000;
+    background-color: #777675;
+    transition: 0.3s all;
+}
+
+// tr:hover{
+//     background-color: #1DB6CE;
+//     transition: 0.5s all;
+// }
 
 
 .scroll{

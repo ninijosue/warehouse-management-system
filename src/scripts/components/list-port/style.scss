@@ -1,4 +1,4 @@
-.btn{
+.list{
     width: 32%;
     height: 150px;
     background-color: #3B3B3B;
@@ -7,10 +7,24 @@
     border: 1.5px solid #1DB6CE;
     border-radius: 4px;
     left: calc(var(--nav-width) + 16%);
-    top: 15%;
+    top: 13%;
     box-shadow: 0px 20px 20px -15px #000000;
     cursor: pointer;
 
+}
+
+.location{
+    width: 32%;
+    height: 150px;
+    background-color: #3B3B3B;
+    color: #ffffff;
+    position: absolute;
+    border: 1.5px solid #D17B0C;
+    border-radius: 4px;
+    left: calc(var(--nav-width) + 16%);
+    top: 45%;
+    box-shadow: 0px 20px 20px -15px #000000;
+    cursor: pointer;
 }
 
 img{
@@ -25,4 +39,15 @@ h2{
     top: 22%;
     left: 10%;
     position: absolute;
+}
+
+
+.invertory[display="true"]{
+    opacity: 0;
+    pointer-events: auto;
+}
+
+.invertory[display="false"]{
+    opacity: 1;
+    pointer-events: auto;
 }

@@ -18,7 +18,9 @@ class ListSection extends LitElement{
         
     }
    
-    
+    getListOfClientsInCompany(data){
+        window.location = "#inventory/choooseClient/clientInfo";
+    }
     render(){
         return html`
         <div class="content">
@@ -30,12 +32,12 @@ class ListSection extends LitElement{
         <div class="list_section">
         <div class="header">
         <h4>List Of Clients</h4>
-        <img src="/static/images/icons/Group 65@2x.png">
+        <img src="/static/images/icons/Group_65.png">
         </div>
         <div class="lists">
         <ul>
         ${this.clientList.map(client => {
-            return html`<li>${client.client}</li>`
+            return html`<li @click=${this.getListOfClientsInCompany} >${client.client} </li>`
         })}
         </ul>
         </div>

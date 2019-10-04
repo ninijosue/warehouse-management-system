@@ -6,8 +6,9 @@ class ListItem extends LitElement{
         this._mainSection = document.querySelector("main-section");
         this._clicked = this._clicked.bind(this);
         this._oncurrentsectionchange = this._oncurrentsectionchange.bind(this);
-        this._mainSection.state.subscribe(this._oncurrentsectionchange)
-
+        this._mainSection.state.subscribe(this._oncurrentsectionchange);
+        
+        
     }
     _oncurrentsectionchange(){
         if(this._mainSection.state.currentSection != this.name) {

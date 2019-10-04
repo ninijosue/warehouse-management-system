@@ -49,7 +49,7 @@ class receiving extends LitElement{
 
         </div>
         </div>
-   <bottom-fixed today="1,567,340" thisWeek="1,567,340" lastWeek="1,289,455" thisMonth="23,067,502"></bottom-fixed>
+   
 
         `
     };
