@@ -235,16 +235,19 @@ class MainSection extends LitElement{
       <bottom-fixed class="main-section" fixed=${"on"== turnOn || turnOff} today="1,567,340" thisWeek="1,567,340" lastWeek="1,289,455" thisMonth="23,067,502"></bottom-fixed>
       <list-content class="main-section" active = ${"inventory/chooseClient" == this.activeSection}></list-content>
       <putaway-location class="main-section" active=${"inventory/location" == this.activeSection}></putaway-location>
-      <expense-monthly-reccord-client class="main-section" fixed=${"expense" == this.activeSection}></expense-monthly-reccord-client>
       <deliver-cliked class="main-section" active=${"deliver" == this.activeSection}></deliver-cliked>
-      <report-clicked class="main-section" active=${"report" == this.activeSection}></report-clicked>
+      <report-clicked class="main-section" active=${"expense" == this.activeSection}></report-clicked>
       <setting-clicked class="main-section" active=${"system" == this.activeSection}></setting-clicked> 
       <client-info-detail class="main-section" active=${"inventory/choooseClient/clientInfo" == this.activeSection}></client-info-detail>
       <print-list-of-entredata-inventory class="main-section"  active=${"inventory/choooseClient/clientInfo/print_inventory_list" == this.activeSection}></print-list-of-entredata-inventory>
+      <deliver-form class="main-section" active=${"deliver/delivergoods" == this.activeSection}></deliver-form>
+      <main-report class="main-section" fixed=${"report" == this.activeSection}></main-report> 
+      <report-clicked class="main-section" fixed=${"report/get" == this.activeSection}></report-clicked> 
+      <sammary-client-name class="main-section" fixed=${'report/get/summary' == this.activeSection}></sammary-client-name>
+      <client-sammary-report class="main-section" fixed=${'report/get/summary/list' == this.activeSection}></client-sammary-report> 
     </div>
-    
+    <!-- class="main-section" fixed=${"expense" == this.activeSection} -->
   
-     <!---<main-report></main-report> --->
     <!--- <client-info-detail></client-info-detail>--->
 
 
@@ -298,3 +301,4 @@ customElements.define('main-section', MainSection);
 //<user-customization></user-customization>
 //<user-well-created></user-well-created>
 //<create-user></create-user>
+

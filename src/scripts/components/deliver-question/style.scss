@@ -1,0 +1,36 @@
+.delete_section{
+    width: 30%;
+    height: 25%;
+    left: calc(var(--nav-width) + 20%);
+    position: absolute;
+    top: 30%;
+    background-color: #ffffff;
+    color: #000000;
+    z-index: 4;
+    border-radius: 30px;
+}
+
+h4{
+    padding-left: 12%;
+    font-weight: 200;
+}
+
+h5{
+    position: absolute;
+    
+}
+
+.delete{
+    left: 70%;
+    top: 60%;
+    font-size: 19px;
+    color: #1DB6CE;
+    cursor: pointer
+}
+
+.cancel{
+    top: 60%;
+    font-size: 19px;
+    left: 40%;
+    cursor: pointer;
+}

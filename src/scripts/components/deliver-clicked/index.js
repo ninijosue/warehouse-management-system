@@ -12,11 +12,19 @@ class Deliver extends LitElement{
         
     }
  
+
+    deliverGoods(){
+        window.location = "#deliver/delivergoods";
+    }
+
+    deliveredList(){
+        window.location = "#deliver/deliveredlist";
+    }
     
     render(){
         return html`
         <div class="buttons">
-        <div class="report">
+        <div class="report" @click=${this.deliverGoods}>
         <h2 class="h2_report">DELIVER GOODS</h2>
         <img class="img_report" src="/static/images/icons/icons8-delivered-96.png"/>
         </div>

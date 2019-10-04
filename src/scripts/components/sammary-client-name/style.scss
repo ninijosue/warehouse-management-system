@@ -105,3 +105,46 @@ button:hover{
     background-color: rgb(125, 127, 128);
     transition: 0.5s all
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.advice{
+    position: absolute;
+    width: 38%;
+    height: 80px;
+    border: 1.6px solid #F75600;
+    background-color: rgba($color: #F4C2C2, $alpha: 0.5);
+    font-family: "Roboto", sans-serif;
+    z-index: 3;
+    border-radius: 2rem;
+    text-align: center;
+    color: #ffffff;
+    right: 22%;
+    top: 0;
+    display: none;    
+    left: calc(var(--nav-width) + 14%);
+
+}
+
+h2{
+    opacity: 1;
+    font-size: 18px;
+    font-weight: 200;
+    z-index: 1;
+    letter-spacing: 1px;
+    margin-top: 1.9rem;
+    text-align: center;
+    position: relative;
+    font-size: 14px;
+    margin-top: 5%;
+
+}
