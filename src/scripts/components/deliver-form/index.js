@@ -77,7 +77,7 @@ class DeliveringForm extends LitElement{
   
         </form>
         
-        <button class="btn_save" @click=${this._deliver}>Save</button>
+        <button class="btn_save" @click=${this._deliver}>Deliver</button>
         
 
         </div>

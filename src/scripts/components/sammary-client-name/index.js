@@ -41,8 +41,9 @@ class SammaryClientName extends LitElement{
        <h2>Please fill the table <br>in other to get client's summary!!!</h2>
        </div>
        <div class="sammary_input_section">
-       <img src="/static/images/icons/icons8-login-100-3.png">
-       <h3>SAMMARY</h3>
+       <h3>
+       <img src="/static/images/icons/icons8-login-100-3.png">       
+       SAMMARY</h3>
        <h6>enter the name <br> 
        of any client and get its monthly summary report
        </h6>

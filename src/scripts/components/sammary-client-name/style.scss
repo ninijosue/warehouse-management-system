@@ -12,11 +12,12 @@
 }
 
 img{
-    width: 6%;
-    height: 4%;
-    left: 2%;
-    top: 5%;
+    width: 49%;
+    z-index: 3;
+    height: 23px;
     position: absolute;
+    left: -78%;
+    cursor: pointer;
 
 }
 
@@ -145,6 +146,6 @@ h2{
     text-align: center;
     position: relative;
     font-size: 14px;
-    margin-top: 5%;
+    margin-top: 2%;
 
 }

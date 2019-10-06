@@ -69,9 +69,13 @@ tr td{
 
 
 img{
-    position:absolute;
-    top: 12%;
-    left: 4%;
+    width: 49%;
+    z-index: 3;
+    height: 23px;
+    position: absolute;
+    left: -78%;
+    cursor: pointer;
+
 }
 
 h2{

@@ -1,6 +1,6 @@
 import {LitElement, html, css, unsafeCSS} from 'lit-element';
 import styles from './style.scss';
-import clientListData from "../../client-hostory-list";
+
 
 
 class Income extends LitElement{
@@ -13,7 +13,7 @@ class Income extends LitElement{
     }
  
     
-    render(){
+    render(){ 
         return html`
         <div class="buttons">
         <div class="report">
