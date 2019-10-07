@@ -27,7 +27,7 @@ import {ReportClicked} from "./components/report-cliked/index";
 import {SammaryClientName} from "./components/sammary-client-name/index";
 import {ClientSammaryReport} from "./components/client-sammary-report/index";
 import {SpaceUsedClientSearch} from "./components/space-used-client-search";
-import {ClientMonthlyReccord} from "./components/expense-month-search/index";
+import {expenseMmonthSeatch} from "./components/expense-month-search/index";
 import {Income} from "./components/income/index";
 import {ClientSpaceUsedReccord} from "./components/client-space-used-record";
 import {CampanyExpenseReport} from "./components/campany-expense-report/index";
@@ -108,7 +108,7 @@ customElements.define('report-clicked', ReportClicked);
 customElements.define('sammary-client-name', SammaryClientName);
 customElements.define('client-sammary-report', ClientSammaryReport);
 customElements.define('space-used-client-search', SpaceUsedClientSearch);
-customElements.define('expense-monthly-reccord-client', ClientMonthlyReccord);
+customElements.define('expense-month-search', expenseMmonthSeatch);
 customElements.define('company-income', Income);
 customElements.define('client-space-used-reccord', ClientSpaceUsedReccord);
 customElements.define('campany-expense-report', CampanyExpenseReport);
@@ -245,6 +245,12 @@ class MainSection extends LitElement{
       <report-clicked class="main-section" fixed=${"report/get" == this.activeSection}></report-clicked> 
       <sammary-client-name class="main-section" fixed=${'report/get/summary' == this.activeSection}></sammary-client-name>
       <client-sammary-report class="main-section" fixed=${'report/get/summary/list' == this.activeSection}></client-sammary-report> 
+      <space-used-client-search class="main-section" fixed=${'report/space-used' == this.activeSection}></space-used-client-search>
+      <client-space-used-reccord class="main-section" fixed=${"report/space-used/info" == this.activeSection}></client-space-used-reccord>
+      <campany-expense-report class="main-section" fixed=${'report/expense-month/expense-detail' == this.activeSection}></campany-expense-report>
+      <expense-month-search class="main-section" fixed=${'report/expense-month' == this.activeSection}></expense-month-search>
+      <company-income class="main-section" fixed=${'report/income' == this.activeSection}></company-income>
+
     </div>
     <!-- class="main-section" fixed=${"expense" == this.activeSection} -->
   

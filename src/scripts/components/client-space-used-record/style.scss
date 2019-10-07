@@ -30,7 +30,7 @@ table{
 tr {
     background-color: #777675;
     height: 40px;
-    border-top: 3px solid #3B3B3B;
+    border-top: 7px solid #3B3B3B;
     padding-left: 7px
 
 }
@@ -69,9 +69,11 @@ tr td{
 
 
 img{
-    position:absolute;
-    top: 12%;
-    left: 4%;
+    width: 49%;
+    z-index: 3;
+    height: 23px;
+    position: absolute;
+    left: -68%;
     cursor: pointer;
 }
 

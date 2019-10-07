@@ -18,8 +18,9 @@ class ClientSpaceUsedReccord extends LitElement{
         return html`
         <div class="section">
         <div class="blue_top"></div>
-        <img src="/static/images/icons/icons8-login-100-3.png">
-        <h2>SUMMARY</h2>
+        <h2>
+        <img src="/static/images/icons/icons8-login-100-3.png">        
+        used space</h2>
         <div class="open">
         <h3 class="h3_open">subura ltd</h3>
         <table>
