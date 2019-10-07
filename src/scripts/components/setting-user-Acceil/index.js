@@ -13,7 +13,21 @@ class Users extends LitElement{
         super();
         this.users = usersData.users
     }
- 
+    static get properties(){
+        return {
+            name: {type: String, reflect: true}
+        }
+    }
+    _userProfil(){
+       
+        window.location = "#system/users/profil"
+        
+    }
+
+    _addNew(){
+        window.location = "#system/users/new-user";
+        
+    }
     
     render(){
         return html`
@@ -22,7 +36,7 @@ class Users extends LitElement{
             <h2>Users</h2>
             <h5>Customise the user’s administrative group.</h5>
             
-            <img class="add_new" src="/static/images/icons/add.png" alt="add new"/>
+            <img @click=${this._addNew} class="add_new" src="/static/images/icons/add-new.png" alt="add new"/>
             <img class="remove" src="/static/images/icons/remove.png" alt="remove"/>
 
             <table>
@@ -34,7 +48,7 @@ class Users extends LitElement{
                     return html`
                     
                     <tr>
-                    <td>${user.Name}</td>
+                    <td  @click=${this._userProfil}>${user.Name}</td>
                     <td>${user.action}
                     <img class="go" src="/static/images/icons/go.png" alt="go"/>
                     </td>

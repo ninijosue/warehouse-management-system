@@ -13,17 +13,49 @@ class UserCustomization extends LitElement{
         super();
         this.users = usersData.users
 
-        console.log(this.users);
+        
         
     }
+
+    firstUpdated(){
+        this.name = this.shadowRoot.querySelector("input[name='name']");
+        this.action = this.shadowRoot.querySelector("input[name='action']");
+        this.status = this.shadowRoot.querySelector("input[name='status']"); 
+        this.advice = this.shadowRoot.querySelector(".advice")       
+    }
+    _savechange(){
+        if (this.name.value == "" || this.action.value == "" || this.status.value == "") {
+            setTimeout(() => {
+                this.advice.style.display = "block"
+            }, 0);
+
+            setTimeout(() => {
+                this.advice.style.display = "none"
+            }, 6000);
+        }
+        else{
+            window.location = "#system/users";
+            this.name.value = "";
+            this.name.value = "";
+            this.name.value = "";
+        }
+    }
+    
  
     
     render(){
         return html`
+        <div class="advice">
+       <h2>No one table that can be empty. <br> Please fill all tables!!!</h2>
+       </div>
+        <div class="save_section">
+       <h4>Record Well Saved!!</h4>
+       </div>
         <div class="section">
-            <img class="back" src="/static/images/icons/icons8-login-100-3.png" alt="back"/>
             <h3>system users</h3>
-            <h2>Users</h2>
+            <h2>
+            <img class="back" src="/static/images/icons/icons8-login-100-3.png" alt="back"/>                
+            Users</h2>
             <h5>Customise the user’s administrative group.</h5>
             <div class="form_section">
             <form action="">
@@ -34,7 +66,7 @@ class UserCustomization extends LitElement{
                 <h4 class="h4_status">Status</h4>
                 <input class="status" type="text" name="user name" value="${this.users[0].status}">
             </form>
-            <button class="save">save</button>
+            <button class="save" @click=${this._savechange}>save</button>
             </div>
 
            

@@ -237,7 +237,6 @@ class MainSection extends LitElement{
       <putaway-location class="main-section" active=${"inventory/location" == this.activeSection}></putaway-location>
       <deliver-cliked class="main-section" active=${"deliver" == this.activeSection}></deliver-cliked>
       <report-clicked class="main-section" active=${"expense" == this.activeSection}></report-clicked>
-      <setting-clicked class="main-section" active=${"system" == this.activeSection}></setting-clicked> 
       <client-info-detail class="main-section" active=${"inventory/choooseClient/clientInfo" == this.activeSection}></client-info-detail>
       <print-list-of-entredata-inventory class="main-section"  active=${"inventory/choooseClient/clientInfo/print_inventory_list" == this.activeSection}></print-list-of-entredata-inventory>
       <deliver-form class="main-section" active=${"deliver/delivergoods" == this.activeSection}></deliver-form>
@@ -250,7 +249,10 @@ class MainSection extends LitElement{
       <campany-expense-report class="main-section" fixed=${'report/expense-month/expense-detail' == this.activeSection}></campany-expense-report>
       <expense-month-search class="main-section" fixed=${'report/expense-month' == this.activeSection}></expense-month-search>
       <company-income class="main-section" fixed=${'report/income' == this.activeSection}></company-income>
-
+      <setting-clicked class="main-section" active=${"system" == this.activeSection}></setting-clicked> 
+      <users-clicked class="main-section" active=${"system/users" == this.activeSection}></users-clicked>
+      <user-customization class="main-section" active=${"system/users/profil" == this.activeSection}></user-customization>
+      <create-user class="main-section" active=${"system/users/new-user" == this.activeSection}></create-user>
     </div>
     <!-- class="main-section" fixed=${"expense" == this.activeSection} -->
   

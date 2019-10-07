@@ -44,11 +44,12 @@ h5{
 }
 
 .back{
-    width: 8%;
+    width: 80%;
+    height: 82%;
+    left: -145%;
+    cursor: pointer;
     position: absolute;
-    height: 4.5%;
-    top: 4%;
-    left: 4%;
+    top: 20%;
 }
 
 .form_section{
@@ -124,4 +125,61 @@ button{
     top: 76%;
     right: 12%;
     border-radius: 2px;
+}
+
+
+
+.save_section{
+    position: absolute;
+    width: 38%;
+    height: 80px;
+    border: 1.6px solid #1DB6CE;
+    background-color: rgba($color: #84E597, $alpha: 0.5);
+    font-family: "Roboto", sans-serif;
+    z-index: 3;
+    border-radius: 2rem;
+    text-align: center;
+    color: #ffffff;
+    right: 22%;
+    top: 0;
+    display: none;
+    
+
+}
+
+h4{
+    opacity: 1;
+    font-size: 18px;
+    font-weight: 200;
+    z-index: 1;
+    letter-spacing: 1px;
+    margin-top: 6%;
+}
+
+
+.advice {
+    position: absolute;
+    width: 38%;
+    height: 80px;
+    background-color: rgba(244, 194, 194, 0.5);
+    z-index: 3;
+    color: rgb(255, 255, 255);
+    right: 22%;
+    top: 0px;
+    display: none;
+    left: calc(var(--nav-width) + 14%);
+    border-width: 1.6px;
+    border-style: solid;
+    border-color: rgb(247, 86, 0);
+    border-radius: 2rem;
+}
+
+.advice h2 {
+    opacity: 1;
+    font-weight: 200;
+    z-index: 1;
+    letter-spacing: 1px;
+    position: relative;
+    font-size: 14px;
+    margin-top: 2%;
 }

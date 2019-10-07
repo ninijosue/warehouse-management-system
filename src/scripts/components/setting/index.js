@@ -11,12 +11,14 @@ class Setting extends LitElement{
         super();
         
     }
- 
+    _users(){
+        window.location = "#system/users"
+    }
     
     render(){
         return html`
         <div class="buttons">
-        <div class="report">
+        <div class="report" @click=${this._users}>
         <h2 class="h2_report">USERS</h2>
         <img class="img_report" src="/static/images/icons/user.png"/>
         </div>

@@ -11,14 +11,37 @@ class CreateUser extends LitElement{
         
     constructor(){
         super();
-       
+    
+    }
 
-        
+    firstUpdated(){
+        this.name = this.shadowRoot.querySelector("input[name='name']");
+        this.action = this.shadowRoot.querySelector("input[name='action']");
+        this.advice = this.shadowRoot.querySelector(".advice")
     }
  
-    
+    _createUser(){
+        if (this.name.value == "" || this.action.value == "") {
+            setTimeout(() => {
+                this.advice.style.display = "block"
+            }, 0);
+
+            setTimeout(() => {
+                this.advice.style.display = "none"
+            }, 6000);
+        }
+        else{
+            window.location = "#system/users";
+            this.name.value = "";
+            this.action.value = "";
+        }
+    }
+
     render(){
         return html`
+        <div class="advice" >
+       <h1 class="advice_h2">No one table that can be empty. <br> Please fill all tables!!!</h1>
+       </div>
         <div class="section">
             <img class="back" src="/static/images/icons/icons8-login-100-3.png" alt="back"/>
             <h3>system users</h3>
@@ -27,13 +50,13 @@ class CreateUser extends LitElement{
             <div class="form_section">
             <form action="">
                 <h4 class="h4_username">Username</h4>
-                <input class="name" type="text" name="user name" placeholder="Employee Name Or Email" >
+                <input class="name" type="text" name="name" placeholder="Employee Name Or Email" >
                 <hr class="hr1">
                 <h4 class="h4_action">Administrative Group</h4>
-                <input class="action" type="text" name="user name" placeholder="Action" >
+                <input class="action" type="text" name="action" placeholder="Action" >
                 <hr class="hr2">
             </form>
-            <button class="save">save</button>
+            <button class="save" @click=${this._createUser}>save</button>
             </div>
 
            

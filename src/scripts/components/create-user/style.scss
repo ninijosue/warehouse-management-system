@@ -137,3 +137,32 @@ button{
 input::placeholder{
     color: #B2B2B2;
 }
+
+.advice{
+    position: absolute;
+    width: 38%;
+    height: 80px;
+    background-color: rgba(244, 194, 194, 0.5);
+    z-index: 3;
+    color: rgb(255, 255, 255);
+    right: 22%;
+    top: 0px;
+    display: none;
+    left: calc(var(--nav-width) + 14%);
+    border-width: 1.6px;
+    border-style: solid;
+    border-color: rgb(247, 86, 0);
+    border-radius: 2rem;
+}
+
+
+.advice h1{
+    opacity: 1;
+    font-weight: 200;
+    z-index: 1;
+    letter-spacing: 1px;
+    position: relative;
+    font-size: 14px;
+    margin-top: 2%;
+    text-align: center;
+}
