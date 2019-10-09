@@ -69,10 +69,22 @@ class Users extends LitElement{
         setTimeout(() => {
             this.advice.style.display = "none"
         }, 6000);
+        this.image.removeAttribute("src");
+        this.image.setAttribute("src", "/static/images/icons/remove.png");
+        this._go.forEach((elements)=>{
+            elements.removeAttribute("src");
+            elements.setAttribute("src", "/static/images/icons/go.png");
+        })
     }
 
     _cancel(){
         this.deleteQuestion.style.display = "none";
+        this.image.removeAttribute("src");
+        this.image.setAttribute("src", "/static/images/icons/remove.png");
+        this._go.forEach((elements)=>{
+            elements.removeAttribute("src");
+            elements.setAttribute("src", "/static/images/icons/go.png");
+        })
     }
    
     
