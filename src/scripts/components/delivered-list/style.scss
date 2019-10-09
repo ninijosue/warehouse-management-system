@@ -30,7 +30,7 @@ table{
 tr {
     background-color: #777675;
     height: 40px;
-    border-top: 3px solid #3B3B3B;
+    border-top: 8px solid #3B3B3B;
     padding-left: 7px
 
 }
@@ -70,12 +70,12 @@ tr td{
 
 
 img{
-    position:absolute;
-    top: 12%;
-    left: 4%;
+    width: 49%;
+    height: 23px;
+    left: -68%;
     cursor: pointer;
-    width: 6%;
-    height: auto;
+    top: 1%;
+    position: absolute;
 }
 
 h2{
@@ -105,5 +105,25 @@ h2{
 
 
 
+.print {
+    position: absolute;
+    right: 3%;
+    top: 15%;
+    width: 103px;
+    background-color: rgb(29, 182, 206);
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    height: 32px;
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    border-style: none;
+    border-radius: 4px;
+}
 
+.print:hover {
+    box-shadow: rgb(0, 0, 0) 0px 10px 20px -7px;
+    background-color: rgb(119, 118, 117);
+    transition: all 0.3s ease 0s;
+}
 

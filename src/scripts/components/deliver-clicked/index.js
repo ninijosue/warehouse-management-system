@@ -17,8 +17,8 @@ class Deliver extends LitElement{
         window.location = "#deliver/delivergoods";
     }
 
-    deliveredList(){
-        window.location = "#deliver/deliveredlist";
+    _deliveredList(){
+        window.location = "#deliver/delivered-month-search";
     }
     
     render(){
@@ -29,7 +29,7 @@ class Deliver extends LitElement{
         <img class="img_report" src="/static/images/icons/icons8-delivered-96.png"/>
         </div>
 
-        <div class="space">
+        <div class="space" @click=${this._deliveredList}>
         <h2 class="h2_space">DELIVERED LIST</h2>
         <img class="img_space" src="/static/images/icons/deliver-list.png"/>
         </div>

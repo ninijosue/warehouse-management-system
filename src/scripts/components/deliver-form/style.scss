@@ -50,7 +50,8 @@ h5{
     text-align: right;
     transform: translate(-64%,450%);
     position: absolute;
-    margin-top: 9%
+    margin-top: 9%;
+    display: none;
 }
 
 input{
@@ -64,9 +65,9 @@ input{
     color: #ffffff;
     box-shadow: 1px 1px 18px 1px #3b3b3b;
     letter-spacing: 1px;
-    padding-left: 10px;
-    left: 50%;
-    margin-top: 10%;
+    padding-left: 8px;
+    left: 44%;
+    text-transform: capitalize;
     
    
 }
@@ -86,7 +87,7 @@ input{
     color: #ffffff;
     letter-spacing: 5px;
     cursor: pointer;
-    transform: translateY(1140%);
+    transform: translate(-13% , 1012%)
 
     
 }

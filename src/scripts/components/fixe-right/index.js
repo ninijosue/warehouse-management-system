@@ -30,7 +30,7 @@ class fixeRightInfo extends LitElement{
      
         <div class="info total_space">
         <h2>${this.totalSpace}m</h2>
-        <img src="/static/images/icons/icons8-change-user-100.png" alt="icon"/>
+        <img src="/static/images/icons/total-space.png" alt="icon"/>
         <h5>Total Space</h5>
         </div>
       
@@ -38,7 +38,7 @@ class fixeRightInfo extends LitElement{
         
         <div class="info space_used">
         <h2>${this.spaceUsed}m</h2>
-        <img src="/static/images/icons/icons8-change-user-100.png" alt="icon"/>
+        <img src="/static/images/icons/used-space.png" alt="icon"/>
         <h5>Space Used</h5>
         </div>
         
@@ -46,7 +46,7 @@ class fixeRightInfo extends LitElement{
         
         <div class="info remaining_space">
         <h2>${this.remaingSpace}m</h2>
-        <img src="/static/images/icons/icons8-change-user-100.png" alt="icon"/>
+        <img src="/static/images/icons/remain-space.png" alt="icon"/>
         <h5>Space Remain</h5>
         </div>
        
@@ -54,7 +54,7 @@ class fixeRightInfo extends LitElement{
       
         <div class="info clients">
         <h2>${this.clients}</h2>
-        <img src="/static/images/icons/icons8-change-user-100.png" alt="icon"/>
+        <img src="/static/images/icons/client.png" alt="icon"/>
         <h5>Clients</h5>
         </div>
         
@@ -62,7 +62,7 @@ class fixeRightInfo extends LitElement{
   
         <div class="info expired_bonds">
         <h2>${this.expiredBonds}</h2>
-        <img src="/static/images/icons/icons8-change-user-100.png" alt="icon"/>
+        <img src="/static/images/icons/expired.png" alt="icon"/>
         <h5>Expired Bonds</h5>
         </div>
  

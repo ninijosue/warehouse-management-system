@@ -6,7 +6,7 @@
     border-radius: 5px;
     right: 1%;
     top:13%;
-    z-index: 1;
+    z-index: 0;
 
 }
 
@@ -50,21 +50,25 @@ h5{
 
 
 .space_used{
-  top: 23%  
+  top: 23%;
+  z-index: 0;
 }
 
 
 .remaining_space{
     top: 33%;
+    z-index: 0;
 }
 
 
 .clients{
-   top: 43%
+   top: 43%;
+   z-index: 0;
 }
 
 .expired_bonds{
     top: 53%;
+    z-index: 0;
 }
 
 .expired_bonds h2{

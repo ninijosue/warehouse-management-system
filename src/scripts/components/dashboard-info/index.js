@@ -27,7 +27,7 @@ class dashboardInfo extends LitElement{
         <div class="row">
 
         
-        <h4>KWACO</h4>
+        <h4>DashBoard</h4>
         <div class="info total_space">
         <h2>${this.totalSpace} m</h2>
         <img src="/static/images/icons/icons8-change-user-100.png" alt="icon"/>

@@ -24,20 +24,23 @@ class UserCustomization extends LitElement{
         this.advice = this.shadowRoot.querySelector(".advice")       
     }
     _savechange(){
+        
+       
+        
         if (this.name.value == "" || this.action.value == "" || this.status.value == "") {
             setTimeout(() => {
-                this.advice.style.display = "block"
+                this.advice.style.display = "block";
             }, 0);
 
             setTimeout(() => {
-                this.advice.style.display = "none"
+                this.advice.style.display = "none";
             }, 6000);
         }
         else{
             window.location = "#system/users";
             this.name.value = "";
-            this.name.value = "";
-            this.name.value = "";
+            this.action.value = "";
+            this.status.value = "";
         }
     }
     
@@ -60,11 +63,11 @@ class UserCustomization extends LitElement{
             <div class="form_section">
             <form action="">
                 <h4 class="h4_username">Username</h4>
-                <input class="name" type="text" name="user name" value="${this.users[0].Name}">
+                <input class="name" type="text" name="name" value="${this.users[0].Name}">
                 <h4 class="h4_action">Administrative Group</h4>
-                <input class="action" type="text" name="user name" value="${this.users[0].action}">
+                <input class="action" type="text" name="action" value="${this.users[0].action}">
                 <h4 class="h4_status">Status</h4>
-                <input class="status" type="text" name="user name" value="${this.users[0].status}">
+                <input class="status" type="text" name="status" value="${this.users[0].status}">
             </form>
             <button class="save" @click=${this._savechange}>save</button>
             </div>

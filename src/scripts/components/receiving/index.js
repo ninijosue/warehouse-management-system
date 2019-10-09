@@ -5,10 +5,39 @@ class receiving extends LitElement{
     constructor(){
         super();
     }
+
+    firstUpdated(){
+        this.clientName = this.shadowRoot.querySelector(".client_name");
+        this.goodName = this.shadowRoot.querySelector(".good_name");
+        this.quantity = this.shadowRoot.querySelector(".quantity");
+        this.bondValue = this.shadowRoot.querySelector(".bond_value");
+        this._date = this.shadowRoot.querySelector(".date");
+        this.periodTime = this.shadowRoot.querySelector(".period_time");
+        this.advice = this.shadowRoot.querySelector(".advice");
+
+
+    }
    
-    
+    _recieve(){
+        if (this.clientName.value == ""|| this.goodName.value == ""|| this.quantity.value == ""|| this.bondValue.value == ""  || this._date.value == "" || this.periodTime.value == "") {
+            setTimeout(() => {
+                this.advice.style.display = "block"
+            }, 0);
+            setTimeout(() => {
+                this.advice.style.display = "none"
+            }, 6000);
+        }
+        else{
+
+        }
+    }
+
+
     render(){
         return html`
+        <div class="advice">
+       <h2>No one table that can be empty. <br> Please fill all tables!!!</h2>
+       </div>
         <div class="receiving">
         <h4>Receiving</h4>
         <div class="top_black"></div>
@@ -18,7 +47,7 @@ class receiving extends LitElement{
 
         <h5 class="name">Client's Name</h5>
         <input type="text" placeholder="Enter The Name Of Client"  class="client_name" />
-       
+      
 
         
         <h5 class="good">Good's Name</h5>
@@ -33,7 +62,7 @@ class receiving extends LitElement{
         
         <h5 class="bond">Bond Value</h5>
         <input type="text" placeholder="Enter The Value Of The Bond"  class="bond_value" />
-    
+        
         
         
         <h5 class="entry">Entry Date</h5>
@@ -45,7 +74,7 @@ class receiving extends LitElement{
         <input type="text" placeholder="Period Of Time  " class="period_time" />
         
 
-        <button class="btn-save">Save</button>
+        <button class="btn-save" @click=${this._recieve}>Recieve</button>
 
         </div>
         </div>

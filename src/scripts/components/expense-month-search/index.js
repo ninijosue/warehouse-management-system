@@ -29,7 +29,8 @@ class expenseMmonthSeatch extends LitElement{
             }, 6000);
         }
         else{
-            window.location = "#report/expense-month/expense-detail"
+            window.location = "#report/expense-month/expense-detail";
+            this.input.value = "";
         }
 
     }

@@ -42,6 +42,8 @@ import { CreateUser } from "./components/create-user";
 import { UserWellCreated } from "./components/user-well-created";
 import { LitElement } from "lit-element";
 import { Print } from './components/search-date-info-to-print';
+import { DeliveredListSearchMonth } from './components/delivered-list-search-month';
+
 
 
 
@@ -122,6 +124,8 @@ customElements.define('user-customization', UserCustomization);
 customElements.define('create-user', CreateUser);
 customElements.define('user-well-created', UserWellCreated);
 customElements.define('print-list-of-entredata-inventory', Print);
+customElements.define('delivered-list-search-search-month', DeliveredListSearchMonth);
+
 
 
 const mainPageSection = document.querySelector('#main_page_section');
@@ -225,7 +229,8 @@ class MainSection extends LitElement{
     <!---<sammary-client-name></sammary-client-name>-->
 
     <!-- <receive-goods></receive-goods>  -->
-    <div id="main_section" current-section="${this.activeSection}">
+    <div id="main_section" class="main-one"  current-section="${this.activeSection}">
+    <user-profil class="main-section" active=${"dashboard/user-log" == this.activeSection}  profileName="Justin BAHATI" avatar="https://lh3.googleusercontent.com/-OMOO6vmnUUs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcchOb7oVd84GIMz9CXHX6PuBGN8A.CMID/s64-c/photo.jpg" ></user-profil>
       <dashboard-info class="main-section" active=${"dashboard" == this.activeSection} totalSpace="1000" spaceUsed="700" remaingSpace="300" clients="150" expiredBonds="50" ></dashboard-info>
       <receive-goods class="main-section" active=${"receiving" == this.activeSection}></receive-goods> 
       <!-- <list-content class="main-section" active = ${"inventory" == this.activeSection}></list-content> -->
@@ -236,7 +241,6 @@ class MainSection extends LitElement{
       <list-content class="main-section" active = ${"inventory/chooseClient" == this.activeSection}></list-content>
       <putaway-location class="main-section" active=${"inventory/location" == this.activeSection}></putaway-location>
       <deliver-cliked class="main-section" active=${"deliver" == this.activeSection}></deliver-cliked>
-      <report-clicked class="main-section" active=${"expense" == this.activeSection}></report-clicked>
       <client-info-detail class="main-section" active=${"inventory/choooseClient/clientInfo" == this.activeSection}></client-info-detail>
       <print-list-of-entredata-inventory class="main-section"  active=${"inventory/choooseClient/clientInfo/print_inventory_list" == this.activeSection}></print-list-of-entredata-inventory>
       <deliver-form class="main-section" active=${"deliver/delivergoods" == this.activeSection}></deliver-form>
@@ -253,6 +257,8 @@ class MainSection extends LitElement{
       <users-clicked class="main-section" active=${"system/users" == this.activeSection}></users-clicked>
       <user-customization class="main-section" active=${"system/users/profil" == this.activeSection}></user-customization>
       <create-user class="main-section" active=${"system/users/new-user" == this.activeSection}></create-user>
+      <delivered-list-search-search-month class="main-section" active=${"deliver/delivered-month-search" == this.activeSection}></delivered-list-search-search-month>
+      <delivered-list class="main-section" active=${"deliver/delivered-month-search/list" == this.activeSection}></delivered-list>
     </div>
     <!-- class="main-section" fixed=${"expense" == this.activeSection} -->
   
