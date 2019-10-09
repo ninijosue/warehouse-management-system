@@ -18,6 +18,15 @@ class Users extends LitElement{
             name: {type: String, reflect: true}
         }
     }
+
+    firstUpdated(){
+        this.image = this.shadowRoot.querySelector(".remove");
+        this._go = this.shadowRoot.querySelectorAll(".go");
+        this.advice = this.shadowRoot.querySelector(".advice");
+        this.deleteQuestion = this.shadowRoot.querySelector(".delete_section");
+        
+    }
+
     _userProfil(){
        
         window.location = "#system/users/profil"
@@ -28,16 +37,62 @@ class Users extends LitElement{
         window.location = "#system/users/new-user";
         
     }
+
+    _delete(){
+        if (this.image) {
+            this.image.removeAttribute("src");
+        this.image.setAttribute("src", "/static/images/icons/delete-selected.png");
+        this._go.forEach((elements)=>{
+            elements.removeAttribute("src");
+            elements.setAttribute("src", "/static/images/icons/delete-icon.png");
+           
+            
+        })
+
+        this._go.forEach((elements)=>{
+            elements.addEventListener("click", ()=>{
+                this.deleteQuestion.style.display = "block";
+            })
+        })
+        
+        }
+       
+        
+        
+    }
+
+    _deleteUser(){
+        this.deleteQuestion.style.display = "none";
+        setTimeout(() => {
+            this.advice.style.display = "block"
+        }, 0);
+        setTimeout(() => {
+            this.advice.style.display = "none"
+        }, 6000);
+    }
+
+    _cancel(){
+        this.deleteQuestion.style.display = "none";
+    }
+   
     
     render(){
         return html`
+        <div class="advice" >
+       <h4>User well deleted</h4>
+       </div>
+        <div class="delete_section">
+        <h1>Delete this record?</h1>
+        <h6 class="cancel" @click=${this._cancel}>Cancel</h5>
+        <h6 class="delete" @click=${this._deleteUser}>Delete</h5>
+        </div>
         <div class="section">
             <h3>system users</h3>
             <h2>Users</h2>
             <h5>Customise the user’s administrative group.</h5>
             
             <img @click=${this._addNew} class="add_new" src="/static/images/icons/add-new.png" alt="add new"/>
-            <img class="remove" src="/static/images/icons/remove.png" alt="remove"/>
+            <img @click=${this._delete} class="remove" src="/static/images/icons/remove.png" alt="remove"/>
 
             <table>
                 <tr>

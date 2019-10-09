@@ -27,7 +27,6 @@ class UserAccount extends LitElement{
     _log(){
        this.logSection.style.display = "block";
        this.profilPc.style.display = "none";
-        console.log(this.picture);
         this.main.addEventListener("click", ()=>{
             this.logSection.style.display = "none";
             this.profilPc.style.display = "block";
