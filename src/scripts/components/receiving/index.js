@@ -44,7 +44,7 @@ class receiving extends LitElement{
         <div class="body_section">
         <div class="scroll_section"></div>
         <div class="scroll_bar"></div>
-
+        <form >
         <h5 class="name">Client's Name</h5>
         <input type="text" placeholder="Enter The Name Of Client"  class="client_name" />
       
@@ -73,7 +73,7 @@ class receiving extends LitElement{
        <h5 class="time">Period Of Time</h5>
         <input type="text" placeholder="Period Of Time  " class="period_time" />
         
-
+        </form>
         <button class="btn-save" @click=${this._recieve}>Recieve</button>
 
         </div>

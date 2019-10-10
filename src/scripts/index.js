@@ -43,6 +43,7 @@ import { UserWellCreated } from "./components/user-well-created";
 import { LitElement } from "lit-element";
 import { Print } from './components/search-date-info-to-print';
 import { DeliveredListSearchMonth } from './components/delivered-list-search-month';
+import { ExpenseClicked } from './components/expense-clicked';
 
 
 
@@ -125,6 +126,8 @@ customElements.define('create-user', CreateUser);
 customElements.define('user-well-created', UserWellCreated);
 customElements.define('print-list-of-entredata-inventory', Print);
 customElements.define('delivered-list-search-search-month', DeliveredListSearchMonth);
+customElements.define('expense-clicked', ExpenseClicked);
+
 
 
 
@@ -259,6 +262,7 @@ class MainSection extends LitElement{
       <create-user class="main-section" active=${"system/users/new-user" == this.activeSection}></create-user>
       <delivered-list-search-search-month class="main-section" active=${"deliver/delivered-month-search" == this.activeSection}></delivered-list-search-search-month>
       <delivered-list class="main-section" active=${"deliver/delivered-month-search/list" == this.activeSection}></delivered-list>
+      <expense-clicked class="main-section" active=${"expense" == this.activeSection}></expense-clicked>
     </div>
     <!-- class="main-section" fixed=${"expense" == this.activeSection} -->
   
