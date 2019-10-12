@@ -20,3 +20,17 @@ img{
     margin-left: -2.5rem
 
 }
+
+@media screen and (max-width: 910px){
+    img{
+       margin-top: 8px;
+        width: 40px;
+        left: 69%;
+        transition: 0.3s all;
+    }
+
+    li{
+       height: 60px;
+       padding-top: 5px;
+    }
+}

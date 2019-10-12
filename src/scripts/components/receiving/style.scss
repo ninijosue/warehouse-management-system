@@ -166,17 +166,6 @@ input::placeholder{
 }
 
 
-// .under_input {
-//     top: 52.8%;
-//     width: 58.7%;
-//     left: 14%;
-//     background-color: rgba(255, 255, 255, 0.63);
-//     height: 1px;
-//     position: absolute;
-//     z-index: 3;
-// }
-
-
 .advice {
     position: absolute;
     width: 38%;
@@ -207,3 +196,16 @@ h2 {
     margin-top: 2%;
     text-align: center;
 }
+
+
+
+@media screen and (max-width: 1300px) {
+    .receiving{
+        width: 50%;
+    }
+   }
+   @media screen and (max-width: 1180px) {
+    .receiving{
+        width: 64%;
+    }
+   }

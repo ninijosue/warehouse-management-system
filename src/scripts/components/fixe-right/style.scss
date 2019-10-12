@@ -74,3 +74,17 @@ h5{
 .expired_bonds h2{
     color: #E34220
 }
+
+
+@media screen and (max-width: 1300px) {
+ .info{
+    width: 15%;
+ }
+}
+
+@media screen and (max-width: 1180px) {
+    .info{
+        opacity: 0;
+    }
+   }
+

@@ -93,3 +93,15 @@ h4{
     background-color: #1DB6CE;
     transition: 0.5s all ;
 }
+
+@media screen and (max-width: 1300px) {
+    .content{
+        width: 50%;
+    }
+   }
+@media screen and (max-width: 1180px) {
+    .content{
+        width: 60%;
+    }
+   }
+  

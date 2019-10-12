@@ -49,42 +49,7 @@ import { ExpenseClicked } from './components/expense-clicked';
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//----------customization of components------
 
 customElements.define('user-account', UserAccount);
 customElements.define('list-item', ListItem);
@@ -132,20 +97,6 @@ customElements.define('expense-clicked', ExpenseClicked);
 
 
 const mainPageSection = document.querySelector('#main_page_section');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -216,28 +167,17 @@ class MainSection extends LitElement{
     return html`
     
     <top-bar>
-    <!-- <user-profil profileName="Justin BAHATI" avatar="https://lh3.googleusercontent.com/-OMOO6vmnUUs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcchOb7oVd84GIMz9CXHX6PuBGN8A.CMID/s64-c/photo.jpg" ></user-profil> -->
-        
     <user-account class="user-account" name="BAHATI" avatar=""></user-account>
     </top-bar>
     
     <nav-section></nav-section>
  
     
-   <!---- 
-    <put-away></put-away> --->
-
-    <!-- <report-clicked></report-clicked> -->
-
-    <!---<sammary-client-name></sammary-client-name>-->
-
-    <!-- <receive-goods></receive-goods>  -->
+   
     <div id="main_section" class="main-one"  current-section="${this.activeSection}">
     <user-profil class="main-section" active=${"dashboard/user-log" == this.activeSection}  profileName="Justin BAHATI" avatar="https://lh3.googleusercontent.com/-OMOO6vmnUUs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcchOb7oVd84GIMz9CXHX6PuBGN8A.CMID/s64-c/photo.jpg" ></user-profil>
       <dashboard-info class="main-section" active=${"dashboard" == this.activeSection} totalSpace="1000" spaceUsed="700" remaingSpace="300" clients="150" expiredBonds="50" ></dashboard-info>
       <receive-goods class="main-section" active=${"receiving" == this.activeSection}></receive-goods> 
-      <!-- <list-content class="main-section" active = ${"inventory" == this.activeSection}></list-content> -->
-      <!-- <putaway-location class="main-section" active =${"inventory" == this.activeSection}></putaway-location> -->
       <client-list class="main-section" active =${"inventory" == this.activeSection}></client-list>
       <fixe-right class="main-section" fixed=${"on" == turnOnFixedRigth || turnOffFixedRight } totalSpace="1000" spaceUsed="700" remaingSpace="300" clients="150" expiredBonds="50" ></fixe-right>
       <bottom-fixed class="main-section" fixed=${"on"== turnOn || turnOff} today="1,567,340" thisWeek="1,567,340" lastWeek="1,289,455" thisMonth="23,067,502"></bottom-fixed>
@@ -264,14 +204,6 @@ class MainSection extends LitElement{
       <delivered-list class="main-section" active=${"deliver/delivered-month-search/list" == this.activeSection}></delivered-list>
       <expense-clicked class="main-section" active=${"expense" == this.activeSection}></expense-clicked>
     </div>
-    <!-- class="main-section" fixed=${"expense" == this.activeSection} -->
-  
-    <!--- <client-info-detail></client-info-detail>--->
-
-
-  <!---- <search-client></search-client> --->
-
-    
 
   <bottom-bar></bottom-bar>
      
@@ -280,43 +212,6 @@ class MainSection extends LitElement{
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+//-----customize the main-section this tag is in the index.html in views folder
 customElements.define('main-section', MainSection);
-
-// render(html`<main-section id="main_page_section"></main-section>`, document.body);
-
-    
-      // ------------- finished that might be hiden----------------------
-      // <well-saved></well-saved> 
-// <dashboard-info totalSpace="1000" spaceUsed="700" remaingSpace="300" clients="150" expiredBonds="50" ></dashboard-info>
-//<volume-goods today="1,567,340" thisWeek="1,567,340" lastWeek="1,289,455" thisMonth="23,067,502"></volume-goods>
-//<list-content></list-content>
-//<delete-section></delete-section>
-//<putaway-location></putaway-location>
-// <space-used-client-search></space-used-client-search>
-//<expense-monthly-reccord-client></expense-monthly-reccord-client>
-//<company-income></company-income>
-//<client-sammary-report></client-sammary-report> 
-//<client-space-used-reccord></client-space-used-reccord>
-//<campany-expense-report></campany-expense-report>
-//<deliver-cliked></deliver-cliked>
-//<deliver-form></deliver-form>
-//<save-question></save-question>
-//<delivered-list></delivered-list>
-//<setting-clicked></setting-clicked>    
-//<users-clicked></users-clicked>
-//<user-customization></user-customization>
-//<user-well-created></user-well-created>
-//<create-user></create-user>
 

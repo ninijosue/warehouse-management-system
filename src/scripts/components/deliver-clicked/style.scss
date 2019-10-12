@@ -71,3 +71,12 @@
     
 }
 
+@media screen and (max-width: 1180px) {
+   .report{
+    left: calc(var(--nav-width) + 20%);
+   }
+   .space{
+    left: calc(var(--nav-width) + 20%);
+   }
+   }
+
