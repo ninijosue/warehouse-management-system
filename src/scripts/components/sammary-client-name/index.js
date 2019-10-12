@@ -35,6 +35,9 @@ class SammaryClientName extends LitElement{
         }
         
     }
+    _goBack(){
+        window.location = "#report/get";
+    }
     render(){
         return html`
          <div class="advice">
@@ -42,7 +45,7 @@ class SammaryClientName extends LitElement{
        </div>
        <div class="sammary_input_section">
        <h3>
-       <img src="/static/images/icons/icons8-login-100-3.png">       
+       <img src="/static/images/icons/icons8-login-100-3.png" @click=${this._goBack}>       
        SAMMARY</h3>
        <h6>enter the name <br> 
        of any client and get its monthly summary report

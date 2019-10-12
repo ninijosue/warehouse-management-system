@@ -27,9 +27,16 @@ class UserAccount extends LitElement{
     _log(){
        this.logSection.style.display = "block";
        this.profilPc.style.display = "none";
-        this.main.addEventListener("click", ()=>{
+        document.addEventListener("click", (evt)=>{
+            if(!evt.target.closest("user-account")) {
             this.logSection.style.display = "none";
             this.profilPc.style.display = "block";
+            }
+            else {
+            this.logSection.style.display = "block";
+            this.profilPc.style.display = "none";
+            }
+            
         })
       
     }

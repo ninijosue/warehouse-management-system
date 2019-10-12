@@ -35,7 +35,9 @@ class SpaceUsedClientSearch extends LitElement{
         }
     }
  
-    
+    _goBack(){
+        window.location = "#report";
+    }
     render(){
         return html`
         <div class="advice">
@@ -43,7 +45,7 @@ class SpaceUsedClientSearch extends LitElement{
        </div>
        <div class="sammary_input_section">
        <h3>
-       <img src="/static/images/icons/icons8-login-100-3.png">
+       <img src="/static/images/icons/icons8-login-100-3.png" @click=${this._goBack}> 
        SPACE USED</h3>
        <h6>enter the name <br> 
        client and get the space that is occupied by its goods

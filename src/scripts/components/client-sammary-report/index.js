@@ -13,7 +13,9 @@ class ClientSammaryReport extends LitElement{
         this.client = clientMonthlyRecord.client
     }
 
-    
+    _goBack(){
+        window.location = "#report/get/summary";
+    }
  
     
     render(){
@@ -22,7 +24,7 @@ class ClientSammaryReport extends LitElement{
         <div class="blue_top"></div>
         
         <h2>
-        <img src="/static/images/icons/icons8-login-100-3.png">
+        <img src="/static/images/icons/icons8-login-100-3.png" @click=${this._goBack}>
         SUMMARY</h2>
         <div class="open">
         <h3 class="h3_open">Open</h3>

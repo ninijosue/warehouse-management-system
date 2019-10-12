@@ -12,13 +12,16 @@ class Income extends LitElement{
         
     }
  
+    _goBack(){
+        window.location = "#report"
+    }
     
     render(){ 
         return html`
         <div class="buttons">
         <div class="report">
        <h3>
-       <img class="img_back" src="/static/images/icons/icons8-login-100-3.png">
+       <img class="img_back"  src="/static/images/icons/icons8-login-100-3.png" @click=${this._goBack}>
            
         iNCOME</h3>
         <h2 class="h2_report">20 000 000</h2>

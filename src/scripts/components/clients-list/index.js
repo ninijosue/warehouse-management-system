@@ -17,6 +17,10 @@ class ListSection extends LitElement{
         
         
     }
+
+    _goBack(){
+        window.location = "#inventory";
+    }
    
     getListOfClientsInCompany(data){
         window.location = "#inventory/choooseClient/clientInfo";
@@ -24,7 +28,7 @@ class ListSection extends LitElement{
     render(){
         return html`
         <div class="content">
-        <img class="back" src="/static/images/icons/icons8-login-100-3.png">
+        <img class="back" src="/static/images/icons/icons8-login-100-3.png" @click=${this._goBack}>
         <h1>150</h1>
         <h5>Total Client</h5>
         <img class="search" src="/static/images/icons/Group 58.png">

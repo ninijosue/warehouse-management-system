@@ -36,14 +36,16 @@ class CreateUser extends LitElement{
             this.action.value = "";
         }
     }
-
+    _goBack(){
+        window.location = "#system";
+    }
     render(){
         return html`
         <div class="advice" >
        <h1 class="advice_h2">No one table that can be empty. <br> Please fill all tables!!!</h1>
        </div>
         <div class="section">
-            <img class="back" src="/static/images/icons/icons8-login-100-3.png" alt="back"/>
+            <img class="back" src="/static/images/icons/icons8-login-100-3.png" alt="back" @click=${this._goBack}/>
             <h3>system users</h3>
             <h2>Add New User</h2>
             <h5>Create a new user account.</h5>

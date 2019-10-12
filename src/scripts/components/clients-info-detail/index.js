@@ -19,17 +19,19 @@ class ClientInfoFromList extends LitElement{
         window.location = "#inventory/choooseClient/clientInfo/print_inventory_list"
     }
 
+    _goBack(){
+        window.location = "#inventory/chooseClient"
+    }
+
     render(){
         return html` 
         <div class="client_info_section">
 
         <div class="top">
-        <!-- <img class="edit" src="/static/images/icons/edit.png"/> -->
-        <!-- <img class="delete" src="/static/images/icons/delete.png"/> -->
         </div>
 
         <div class="info_dashboard">
-        <img class="back" src="/static/images/icons/icons8-login-100-3.png" alt="back"/>
+        <img class="back" src="/static/images/icons/icons8-login-100-3.png" alt="back" @click=${this._goBack}/>
         <h3>Tradiline & Subira INVESTMENT</h3>
         <table>
         <tr class="header">

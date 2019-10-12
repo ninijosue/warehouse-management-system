@@ -33,7 +33,9 @@ class Print extends LitElement{
             this.input.value = ""
         }
     }
-
+    _goBack(){
+        window.location = "#inventory/choooseClient/clientInfo"
+    }
     render(){
         return html`
         <div class="advice" style="display: none;">
@@ -41,7 +43,7 @@ class Print extends LitElement{
        </div>
        <div class="sammary_input_section">
        <h3>
-       <img src="/static/images/icons/icons8-login-100-3.png">
+       <img src="/static/images/icons/icons8-login-100-3.png" @click=${this._goBack}>
         LIST</h3>
        <h6>enter the date  <br> 
        of the month that you want to print

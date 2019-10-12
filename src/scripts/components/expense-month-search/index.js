@@ -34,7 +34,9 @@ class expenseMmonthSeatch extends LitElement{
         }
 
     }
-    
+    _goBack(){
+        window.location = "#report"
+    }
     render(){
         return html`
         <div class="advice">
@@ -42,7 +44,7 @@ class expenseMmonthSeatch extends LitElement{
        </div>
        <div class="sammary_input_section">
        <h3>
-       <img src="/static/images/icons/icons8-login-100-3.png">    
+       <img src="/static/images/icons/icons8-login-100-3.png" @click=${this._goBack}>    
        EXPENSE</h3>
        <h6>enter the Month  <br> 
        and Year in other to the its records

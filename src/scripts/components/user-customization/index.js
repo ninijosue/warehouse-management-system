@@ -44,7 +44,9 @@ class UserCustomization extends LitElement{
         }
     }
     
- 
+    _goBack(){
+        window.location = "#system/users"
+    }
     
     render(){
         return html`
@@ -57,7 +59,7 @@ class UserCustomization extends LitElement{
         <div class="section">
             <h3>system users</h3>
             <h2>
-            <img class="back" src="/static/images/icons/icons8-login-100-3.png" alt="back"/>                
+            <img class="back" src="/static/images/icons/icons8-login-100-3.png" alt="back" @click=${this._goBack}/>                
             Users</h2>
             <h5>Customise the user’s administrative group.</h5>
             <div class="form_section">

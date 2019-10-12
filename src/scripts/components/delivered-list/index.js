@@ -13,13 +13,15 @@ class DeliveredList extends LitElement{
         this.client = monthlyDeliveredListData.listData
     }
  
-    
+    _goBack(){
+        window.location = "#deliver/delivered-month-search";
+    }
     render(){
         return html`
         <div class="section">
         <div class="blue_top"></div>
         <h2>
-        <img src="/static/images/icons/icons8-login-100-3.png">
+        <img src="/static/images/icons/icons8-login-100-3.png" @click=${this._goBack}>
         DELIVER</h2>
         <div class="open">
         <h3 class="h3_open">delivered detail in march</h3>

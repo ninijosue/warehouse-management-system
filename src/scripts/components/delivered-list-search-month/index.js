@@ -33,8 +33,11 @@ class DeliveredListSearchMonth extends LitElement{
             window.location = "#deliver/delivered-month-search/list";
             this.clientNameSearch.value = "";
         }
-        
     }
+    _goBack(){
+        window.location = "#deliver";
+    }
+
     render(){
         return html`
          <div class="advice">
@@ -42,7 +45,7 @@ class DeliveredListSearchMonth extends LitElement{
        </div>
        <div class="sammary_input_section">
        <h3>
-       <img src="/static/images/icons/icons8-login-100-3.png">       
+       <img src="/static/images/icons/icons8-login-100-3.png" @click=${this._goBack}>       
        DELIVER</h3>
        <h6>Enter the month in number <br> 
        and get the list of the month that You wrotte

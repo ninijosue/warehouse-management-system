@@ -12,14 +12,16 @@ class CampanyExpenseReport extends LitElement{
         super();
         this.client = campanyExpensesData.expenses
     }
- 
+    _goBack(){
+        window.location = "#report/expense-month"
+    }
     
     render(){
         return html`
         <div class="section">
         <div class="blue_top"></div>
         <h2>
-        <img src="/static/images/icons/icons8-login-100-3.png">
+        <img src="/static/images/icons/icons8-login-100-3.png" @click=${this._goBack}>
         EXPENSES</h2>
         <div class="open">
         <h3 class="h3_open">CAMPANY EXPENSES IN SEPTEMBER</h3>

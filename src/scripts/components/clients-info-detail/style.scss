@@ -45,7 +45,8 @@
     left: 4.3%;
     top: 11%;
     width: 4%;
-    height: 4%
+    height: 4%;
+    cursor: pointer;
 }
 
 h3{
@@ -137,10 +138,6 @@ tr td{
     transition: 0.3s all;
 }
 
-// tr:hover{
-//     background-color: #1DB6CE;
-//     transition: 0.5s all;
-// }
 
 
 .scroll{
