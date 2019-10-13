@@ -21,7 +21,8 @@ ul{
     :host{
        transition: 0.2s all;
        color: transparent;
+       height: calc(100% - 20%);
+       top: 20%;
+
     }
 }
-
-

@@ -26,7 +26,7 @@ class ClientListEdit extends LitElement{
         <div class="body_section">
         <div class="scroll_section"></div>
         <div class="scroll_bar"></div>
-
+        <form action="">
         <h5 class="name">Client's Name</h5>
         <input type="text" placeholder="" value="${this.clientClickedList.clientName}" class="client_name" />
        
@@ -54,7 +54,7 @@ class ClientListEdit extends LitElement{
       
        <h5 class="time">Period Of Time</h5>
         <input type="text" placeholder="" value="${this.clientClickedList.time}" class="period_time" />
-        
+        </form>
         <button class="btn_cancel">Cancel</button>
         <button class="btn_save">Save</button>
         

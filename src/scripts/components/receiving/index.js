@@ -42,8 +42,6 @@ class receiving extends LitElement{
         <h4>Receiving</h4>
         <div class="top_black"></div>
         <div class="body_section">
-        <div class="scroll_section"></div>
-        <div class="scroll_bar"></div>
         <form >
         <h5 class="name">Client's Name</h5>
         <input type="text" placeholder="Enter The Name Of Client"  class="client_name" />
