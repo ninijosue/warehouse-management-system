@@ -73,3 +73,21 @@ img{
     right: -30%;
   
 }
+@media screen and(max-width: 1000px){
+    img{
+        opacity: 0;
+    }
+}
+@media screen and(max-width: 910px){
+    img{
+        opacity: 0;
+    }
+    .volume_goods{
+        width: 80%;
+    }
+}
+@media screen and(max-width: 700px){
+    .volume_goods{
+        opacity: 0;
+    }
+}

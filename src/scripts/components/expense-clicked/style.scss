@@ -1,5 +1,4 @@
 .expense{
-    z-index: 2;
     position: absolute;
     left: calc(var(--nav-width) + 5%);
     right: 0;
@@ -39,7 +38,6 @@ h4{
     font-size: 12px;
     font-weight: 200;
     position: absolute;
-    z-index: 2;
     letter-spacing: 2px;
     top: -7.5%
 }
@@ -231,4 +229,37 @@ h6 {
 .delete {
     left: 70%;
     color: rgb(29, 182, 206);
+}
+
+@media screen and(max-width: 1170px){
+    .expense{
+        width: 63%;
+    }
+}
+
+@media screen and(max-width: 910px){
+    .expense{
+        width: 78%;
+    }
+    .save_section{
+        width: 52%;
+        left: 27%
+    }
+}
+@media screen and(max-width: 700px){
+    .expense{
+        width: 67%;
+    }
+    
+}
+@media screen and(max-width: 400px){
+    .save_section{
+        left: calc(var(--nav-width) + 13%);
+    }
+    .cancel{
+        left: 11%;
+    }
+    .delete{
+        left: 58%;
+    }
 }

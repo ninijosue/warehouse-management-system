@@ -6,7 +6,6 @@
     background-color: #3B3B3B;
     border: 2px solid #1DB6CE;
     top: 15%;
-    z-index: 3;
     position: absolute;
     font-size: 18px;
     color: #ffffff;
@@ -43,7 +42,6 @@
     background-color: #3B3B3B;
     border: 2px solid #D17B0C;
     top: 48%;
-    z-index: 3;
     position: absolute;
     font-size: 18px;
     color: #ffffff; 
@@ -78,5 +76,47 @@
    .space{
     left: calc(var(--nav-width) + 20%);
    }
+   }
+   @media screen and(max-width: 1000px){
+    .report, .space{
+        left: calc(var(--nav-width) + 10%);
+        width: 51%;
+        height: 17%;
+        top: 20%;
+       }
+    .space{
+        top: 45%;
+       }
+   }
+
+   @media screen and(max-width: 910px){
+       .report, .space{
+            left: calc(var(--nav-width) + 19%)
+       }
+   }
+   @media screen and(max-width: 650px){
+       .h2_report, .h2_space{
+        font-size: 19px;
+        top: 35%;
+       }
+       .img_report,.img_space{
+        width: 65px;
+        top: 32%
+       }
+   }
+
+   @media screen and(max-width: 560px){
+       .report,.space{
+        left: calc(var(--nav-width) + 6%);
+        width: 68%
+       }
+   }
+
+
+   @media screen and(max-width: 400px){
+       .h2_space,.h2_report{
+        font-size: 13px;
+        top: 38%;
+       }
    }
 

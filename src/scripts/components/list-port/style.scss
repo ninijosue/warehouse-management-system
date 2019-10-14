@@ -51,3 +51,35 @@ h2{
     opacity: 1;
     pointer-events: auto;
 }
+@media screen and(max-width: 910px){
+    .list{
+        width: 54%;
+        height: 16%;
+        top: 21%;
+    }
+    .location{
+        width: 54%;
+        height: 16%;
+        top: 50%;
+    }
+}
+
+@media screen and(max-width: 600px){
+   h2{
+    font-size: 20px;
+    top: 32%;
+   }
+   img{
+    width: 21%;
+    top: 33%;
+   }
+}
+
+@media screen and(max-width: 400px){
+    .list{
+        left: calc(var(--nav-width) + 9%);
+    }
+    .location{
+        left: calc(var(--nav-width) + 9%);
+    }
+}

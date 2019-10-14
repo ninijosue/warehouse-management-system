@@ -48,3 +48,35 @@ h3{
     font-size: 18px;
     font-weight: 100;
 }
+@media screen and(max-width: 1240px){
+    .location_bg{
+        width: 54%;
+    }
+}
+@media screen and(max-width: 1180px){
+    .location_bg{
+        width: 64%;
+    }
+}
+
+@media screen and(max-width: 910px){
+    .location_bg{
+        width: 78%;
+        top: 17%;
+    }
+    h2{
+        top: 10%;
+    }
+}
+@media screen and(max-width: 650px){
+    .location_bg{
+        width: 74%;
+    }
+
+}
+
+@media screen and(max-width: 500px){
+    .location_bg{
+        width: 69%;
+    }
+}

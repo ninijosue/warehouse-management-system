@@ -6,7 +6,6 @@
     border-radius: 5px;
     color: #ffffff;
     width: 46%;
-    z-index: 3;
     height: 63%;
     top: 13%
 }
@@ -69,7 +68,7 @@ input::placeholder{
 .top_line{
     position: absolute;
     display: block;
-    z-index: 3;
+    z-index: 0;
     width: 100%;
     border: none;
     height: 1.5px;
@@ -85,7 +84,7 @@ input::placeholder{
     left: 14%;
     border: none;
     background-color: #ffffffa1;
-    height: 1px
+    height: 1px;
 }
 
 button{
@@ -140,5 +139,33 @@ h2 {
 @media screen and(max-width: 1180px){
     .sammary_input_section{
         width: 58%;
+        left: calc(var(--nav-width) + 7%);
+    }
+}
+@media screen and(max-width: 910px){
+    .sammary_input_section{
+       width: 73%;
+
+    }
+   h3{
+    left: 19%;
+   }
+}
+@media screen and(max-width: 600px){
+    .sammary_input_section{
+        border: none;
+    }
+    .top_line{
+        left: -9%;
+        width: 117%;
+    }
+    h4, input{
+        left: 2%;
+    }
+    input{
+        width: 80%; 
+    }
+    button{
+        width: 30%;
     }
 }

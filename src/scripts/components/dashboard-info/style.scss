@@ -83,3 +83,47 @@ h5{
 .expired_bonds h2{
     color: #E34220
 }
+
+@media screen and (max-width: 910px){
+    .info{
+        width: 25%;
+    }
+    .space_used{
+        left: calc(var(--nav-width) + 32.5%);
+    }
+    
+    
+    .remaining_space{
+        left: calc(var(--nav-width) + 60%);
+    }
+    .expired_bonds{
+        left: calc(var(--nav-width) + 32.5%);
+    }
+}
+
+@media screen and (max-width: 700px){
+    .info{
+        width: 60%;
+        height: 14%;
+    }
+    
+    .total_space{
+        top: 14%
+    }
+    .space_used{
+        top: 30%
+    }
+    .remaining_space{
+        top: 46%
+    }
+    .clients{
+        top: 62%;
+    }
+    .expired_bonds{
+        top: 78%;
+    }
+    .total_space, .clients, .remaining_space, .expired_bonds, .space_used{
+    left: calc(var(--nav-width) + 5%);
+    }
+
+}

@@ -144,5 +144,33 @@ h2{
 @media screen and(max-width: 1180px){
     .sammary_input_section{
         width: 58%;
+        left: calc(var(--nav-width) + 7%);
+    }
+}
+@media screen and(max-width: 910px){
+    .sammary_input_section{
+       width: 73%;
+
+    }
+   h3{
+    left: 19%;
+   }
+}
+@media screen and(max-width: 600px){
+    .sammary_input_section{
+        border: none;
+    }
+    .top_line{
+        left: -9%;
+        width: 117%;
+    }
+    h4, input{
+        left: 2%;
+    }
+    input{
+        width: 80%; 
+    }
+    button{
+        width: 30%;
     }
 }

@@ -1,7 +1,7 @@
 .client_info_section{
     position: absolute;
     width: 67%;
-    height: 66%;
+    height: 65%;
     left: calc(var(--nav-width) + 5%);
     top: 13.4%;
     background-color: #3B3B3B;
@@ -144,6 +144,42 @@ tr td{
     overflow: scroll;
     height: 60%;
 }
-
-
-
+@media screen and(max-width: 910px){
+    .client_info_section{
+        width: 79%;
+        height: 77%;
+    }
+    table{
+        margin-top: 28%;
+    }
+    button{
+        opacity: 0;
+    }
+    .back{
+        width: 9%;
+        height: auto;
+        top: 7%;
+    }
+}
+@media screen and(max-width: 1300px){
+    table{
+        margin-top: 24%;
+    }
+    .print{
+        top: 13%;
+    }
+    .back{
+        height: auto;
+        width: 6%;
+        top: 7%;
+    }
+}
+@media screen and(max-width: 700px){
+    .client_info_section{
+        left: calc(var(--nav-width) + 2%);
+    }
+    h3{
+        font-size: 14px;
+        top: 5%;
+    }
+}

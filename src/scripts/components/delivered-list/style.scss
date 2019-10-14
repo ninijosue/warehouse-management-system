@@ -127,3 +127,39 @@ h2{
     transition: all 0.3s ease 0s;
 }
 
+@media screen and(max-width: 1400px){
+    .section{
+        width: 55%;
+    }
+}
+
+@media screen and(max-width: 1170px){
+    .section{
+            width: 55%;
+        }
+    .print{
+            opacity: 0;
+        }
+}
+
+@media screen and(max-width: 910px){
+   .section{
+    width: 78%;
+   }
+}
+@media screen and(max-width: 710px){
+    .section{
+        width: 65%;
+    }
+    .h3_open{
+        font-size: 12px;
+    }
+    h2{
+        font-size: 12px;
+        left: 17%;
+        top: 8%;
+    }
+    img{
+        margin-top: -10%;
+    }
+}

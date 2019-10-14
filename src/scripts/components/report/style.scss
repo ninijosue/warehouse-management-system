@@ -5,7 +5,6 @@
     background-color: #3B3B3B;
     border: 2px solid #1DB6CE;
     top: 15%;
-    z-index: 3;
     position: absolute;
     font-size: 18px;
     color: #ffffff;
@@ -38,7 +37,6 @@
     background-color: #3B3B3B;
     border: 2px solid #D17B0C;
     top: 15%;
-    z-index: 3;
     position: absolute;
     font-size: 18px;
     color: #ffffff;
@@ -69,7 +67,6 @@
     background-color: #3B3B3B;
     border: 2px solid #1DB6CE;
     top: 46%;
-    z-index: 3;
     position: absolute;
     font-size: 18px;
     color: #ffffff;
@@ -101,7 +98,6 @@
     background-color: #3B3B3B;
     border: 2px solid #D17B0C;
     top: 46%;
-    z-index: 3;
     position: absolute;
     font-size: 18px;
     color: #ffffff;
@@ -127,3 +123,61 @@
     position: absolute;
     top: 28%;
 }
+
+@media screen and(max-width: 1000px){
+    .expenses,.space,.report,.income{
+        width: 29%;
+        height: 16%;
+    }
+    .space,.income{
+        left: calc(var(--nav-width) + 39%);
+    }
+}
+@media screen and(max-width: 910px){
+   .img_expense,.img_income,.img_space,.img_expense{
+       top: 37%;
+   }
+   .expenses,.report{
+    left: calc(var(--nav-width) + 11%);
+    }
+    .space,.income{
+    left: calc(var(--nav-width) + 45%);
+    }
+    .img_report{
+        top: 35%
+    }
+}
+
+@media screen and(max-width: 700px){
+    .space,.expenses,.income,.report{
+        width: 65%;
+    }
+    .report{
+        top: 10%;
+    }
+    .expenses{
+        top: 49%;
+    }
+    .income{
+        top: 69%;
+    }
+    .space{
+        top: 30%;
+    }
+    .space,.income{
+        left: calc(var(--nav-width) + 11%);
+    }
+    .img_report{
+        top: 30%
+    }
+}
+
+@media screen and(max-width: 450px){
+    .space,.expenses,.income,.report{
+        left: calc(var(--nav-width) + 3%);
+    }
+    .img_report{
+        top: 35%
+    }
+}
+
