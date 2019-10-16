@@ -68,3 +68,37 @@
     top: 28%;
 }
 
+@media screen and(max-width: 1170px){
+    .space{
+        width: 47%;
+    }
+    .report{
+        width: 47%;
+    }
+}
+@media screen and(max-width: 910px){
+    .space{
+        width: 58%;
+    }
+    .report{
+        width: 58%;
+    }
+}
+
+@media screen and(max-width: 600px){
+    .space, .report{
+        width: 70%;
+        left: calc(var(--nav-width) + 3%);
+        height: 16%;
+    }
+    .h2_report,.h2_space{
+        font-size: 23px;
+        top: 32%;
+    }
+    .img_report{
+        top: 33%;
+    }
+    .h2_space{
+        font-size: 19;
+    }
+}

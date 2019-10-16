@@ -6,7 +6,6 @@
     top: 13%;
     width: 57%;
     height: 66%;
-    z-index: 3;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     overflow: auto;
@@ -119,5 +118,36 @@ h2{
     font-weight: 500;
 }
 
+@media screen and(max-width: 1350px){
+    .section{
+        width: 55%;
+    }
+}
+@media screen and(max-width: 1170px){
 
+    .section{
+        width: 64%;
+    }
+    h2{
+        left: 21%;
+    }
+}
+
+@media screen and(max-width: 910px){
+    .section{
+        width: 78%;
+    }
+}
+@media screen and(max-width: 600px){
+    .section{
+        width: 66%;
+    }
+    h2{
+        left: 26%;
+        width: 28%;
+    }
+    .open{
+        margin-top: 32%;
+    }
+}
 

@@ -72,10 +72,11 @@ tr td{
 img{
     
     height: 23px;
-    left: -68%;
     cursor: pointer;
-    width: 27%;
-    transform: translate(-93%,22%)
+    position: absolute;
+    width: 40%;
+    left: -58%;
+    top: 5%;
 }
 
 h2{
@@ -123,5 +124,48 @@ h2{
     background-color: rgb(119, 118, 117);
     transition: all 0.3s ease 0s
 }
+
+@media screen and(max-width: 1350px){
+    .section{
+        width: 55%;
+    }
+}
+@media screen and(max-width: 1170px){
+
+    .section{
+        width: 64%;
+    }
+    h2{
+        left: 21%;
+    }
+    .print{
+        opacity: 0;
+    }
+    .h3_open{
+        margin-top: 20%;
+    }
+}
+
+@media screen and(max-width: 910px){
+    .section{
+        width: 78%;
+    }
+}
+@media screen and(max-width: 600px){
+    .section{
+        width: 66%;
+    }
+    h2{
+        left: 26%;
+        width: 28%;
+    }
+    .open{
+        margin-top: 32%;
+    }
+    .h3_open{
+    font-size: 10px;
+    }
+}
+
 
 

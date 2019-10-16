@@ -3,7 +3,6 @@
     background-color: #3B3B3B;
     border: 2px solid;
     top: 15%;
-    z-index: 3;
     position: absolute;
     font-size: 18px;
     color: #ffffff;
@@ -20,7 +19,7 @@
     width: 10%;
     height: 52px;
     position: absolute;
-    top: 59%;
+    top: 50%;
     cursor: pointer;
     right: 8%;
 
@@ -52,3 +51,35 @@ h3{
     font-weight: 500;
     
 }
+
+@media screen and(max-width: 1170px){
+    .report{
+        width: 55%;
+    }
+    .img_report{
+        top: 53%;
+    }
+}
+
+@media screen and(max-width: 910px){
+    .report{
+        width: 71%;
+    }
+}
+@media screen and(max-width: 600px){
+    .report{
+        width: 63%;
+    }
+    .img_report {
+    top: 44%;
+    height: auto;
+    right: 10%;
+    }
+    .img_back{
+        left: 18%;
+    }
+    .h2_report{
+        font-size: 28px;
+    }
+}
+
