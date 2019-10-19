@@ -6,7 +6,6 @@
     border-radius: 5px;
     color: #ffffff;
     width: 46%;
-    z-index: 3;
     height: 63%;
     top: 13%
 }
@@ -137,7 +136,6 @@ h2{
     position: relative;
     font-size: 14px;
     margin-top: 2%;
-
 }
 
 @media screen and(max-width: 1180px){
@@ -154,6 +152,13 @@ h2{
    h3{
     left: 19%;
    }
+   .advice{
+    top: 8%;
+    left: 38%;
+    }
+    h2{
+        margin-top: 6%;
+    }
 }
 @media screen and(max-width: 600px){
     .sammary_input_section{
@@ -171,5 +176,16 @@ h2{
     }
     button{
         width: 30%;
+    }
+    .advice{
+        left: 44%;
+       }
+       h2{
+           font-size: 12px;
+           margin-top: 7%;
+       }
+    .under_input{
+        width: 77%;
+        left: 4%;
     }
 }

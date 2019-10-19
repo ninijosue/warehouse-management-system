@@ -115,12 +115,6 @@ class MainSection extends LitElement{
     this.getInventoryLists = !!window.location.hash ? window.location.hash.substring(1) : "dashboard";
     this.displayOn = "on";
     this.displayOff = "off";
-    
-    
-    
-    
-    
-    
   }
   _oncurrentsectionchange(){
     this.activeSection = this.state.currentSection;
@@ -137,21 +131,19 @@ class MainSection extends LitElement{
     return this;
   }
 
-  
-
   render(){
     const dashboard = "dashboard";
     const clientInfo = "inventory/choooseClient/clientInfo";
     const choooseClientInventory = "inventory/chooseClient";
     const sectionOn = this.activeSection;
+    //decide if the fixedRirght will be displayed of not
+    
      if (sectionOn == dashboard ) {
       var turnOff = this.displayOff;
-      
-     }else if (sectionOn == dashboard ) {
-      var turnOffFixedRight = this.displayOff
+      var turnOffFixedRight = turnOff;
      }
      else if (sectionOn == clientInfo) {
-      var turnOffFixedRight = this.displayOff
+      var turnOffFixedRight = "off";
       var turnOn = this.displayOn
      }
      else if (sectionOn == choooseClientInventory ) {
@@ -169,13 +161,8 @@ class MainSection extends LitElement{
     <top-bar>
     <user-account class="user-account" name="BAHATI" avatar=""></user-account>
     </top-bar>
-    
     <nav-section></nav-section>
- 
-    
-   
     <div id="main_section" class="main-one"  current-section="${this.activeSection}">
-    <user-profil class="main-section" active=${"dashboard/user-log" == this.activeSection}  profileName="Justin BAHATI" avatar="https://lh3.googleusercontent.com/-OMOO6vmnUUs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcchOb7oVd84GIMz9CXHX6PuBGN8A.CMID/s64-c/photo.jpg" ></user-profil>
       <dashboard-info class="main-section" active=${"dashboard" == this.activeSection} totalSpace="1000" spaceUsed="700" remaingSpace="300" clients="150" expiredBonds="50" ></dashboard-info>
       <receive-goods class="main-section" active=${"receiving" == this.activeSection}></receive-goods> 
       <client-list class="main-section" active =${"inventory" == this.activeSection}></client-list>
@@ -204,10 +191,7 @@ class MainSection extends LitElement{
       <delivered-list class="main-section" active=${"deliver/delivered-month-search/list" == this.activeSection}></delivered-list>
       <expense-clicked class="main-section" active=${"expense" == this.activeSection}></expense-clicked>
     </div>
-
   <bottom-bar></bottom-bar>
-     
-    
     `;
   }
 }

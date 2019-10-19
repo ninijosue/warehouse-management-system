@@ -6,7 +6,6 @@
     background-color: #3B3B3B;
     border: 2px solid #D17B0C;
     top: 30%;
-    z-index: 3;
     position: absolute;
     font-size: 18px;
     color: #ffffff;
@@ -36,3 +35,24 @@
 
 }
 
+@media screen and(max-width: 1170px){
+    .report{
+        width: 49%;
+        left: calc(var(--nav-width) + 11%)
+    }
+}
+@media screen and(max-width: 910px){
+    .report{
+        width: 64%;
+    }
+}
+@media screen and(max-width: 500px){
+    .report{
+        height: 16%;
+        left: calc(var(--nav-width) + 3%);
+        width: 62%;
+    }
+    .img_report{
+        top: 37%;
+    }
+}

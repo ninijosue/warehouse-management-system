@@ -44,11 +44,11 @@ h5{
 }
 
 .back{
-    width: 8%;
     position: absolute;
-    height: 4.5%;
-    top: 4%;
-    left: 4%;
+    width: 40%;
+    height: auto;
+    left: -65%;
+    cursor: pointer;
 }
 
 .form_section{
@@ -165,4 +165,36 @@ input::placeholder{
     font-size: 14px;
     margin-top: 2%;
     text-align: center;
+}
+@media screen and(max-width: 1170px){
+    .section{
+        width: 61%;
+    }
+}
+@media screen and(max-width: 910px){
+    .section{
+        width: 61%;
+        width: 79%;
+        left: calc(var(--nav-width) + 3%);
+       
+    }
+    .back{
+        left: -33%;
+        width: 26%;
+        top: 30%;    
+    }
+}
+@media screen and(max-width: 700px){
+    .section{
+        width: 65%;
+    }
+    h5{
+        position: absolute;
+        top: 10%;
+        margin: auto;
+        left: 8%;
+    }
+    h2{
+        font-size: 16px;
+    }
 }

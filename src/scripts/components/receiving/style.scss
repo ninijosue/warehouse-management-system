@@ -126,40 +126,6 @@ button:hover{
 .period_time{
     transform: translateY(700%)
 }
-
-
-// .name{
-//     transform: translateY(200%);
-//     left: 20%;
-// }
-
-// .good{
-//     transform: translateY(487%);
-//     left: 20%;
-// }
-
-// .quantit{
-//     left: 30%;
-//     transform: translateY(780%)
-// }
-
-// .bond{
-//     left: 23.3%;
-//     transform: translateY(1050%)
-// }
-
-// .entry{
-//     left: 25%;
-//     transform: translateY(1340%);
-
-// }
-
-// .time{
-//     left: 18%;
-//     transform: translateY(1630%)
-// }
-
-
 input::placeholder{
     color: #B2B2B2;
     font-size: 13px;
@@ -185,10 +151,6 @@ input::placeholder{
     border-color: rgb(247, 86, 0);
     border-radius: 2rem;
 }
-
-
-
-
 h2 {
     opacity: 1;
     font-weight: 200;
@@ -199,9 +161,6 @@ h2 {
     margin-top: 2%;
     text-align: center;
 }
-
-
-
 @media screen and (max-width: 1300px) {
     .receiving{
         width: 50%;

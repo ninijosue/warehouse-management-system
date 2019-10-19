@@ -15,7 +15,8 @@
 table{
     width: 100%;
     border-collapse: collapse;
-    margin-top: 25%;
+    position: absolute;
+    top: 42%;
     
 }
 
@@ -91,20 +92,12 @@ h5{
 }
 
 .go{
-    width: 2.5%;
-    height: 4.5%;
+    width: 2%;
+    height:auto;
     position: absolute;
     right: 5.5%;
+    padding-top: 0;
 }
-
-
-
-
-
-
-
-
-
 
 
 .delete_section{
@@ -176,4 +169,51 @@ h6{
     font-size: 18px;
     margin-top: 4%;
     text-align: center;
+}
+
+@media screen and(max-width: 1170px){
+    .section{
+        width: 61%;
+    }
+}
+@media screen and(max-width: 910px){
+    .section{
+        width: 61%;
+        width: 79%;
+        left: calc(var(--nav-width) + 3%);
+    }
+    .delete_section{
+        width: 50%;
+    }
+    .go{
+        width: 18px;
+    }
+}
+@media screen and(max-width: 700px){
+    .section{
+        width: 65%;
+    }
+    .add_new{
+        width: 16%;
+        right: 27%;
+    }
+    .remove{
+        width: 16%;
+    }
+    h5{
+        position: absolute;
+        top: 10%;
+        margin: auto;
+        left: 8%;
+    }
+    .delete_section{
+        width: 50%;
+    }
+    
+}
+@media screen and(max-width: 400px){
+    .cancel{
+        left: 14%;
+    }
+    
 }

@@ -37,7 +37,7 @@ class CreateUser extends LitElement{
         }
     }
     _goBack(){
-        window.location = "#system";
+        window.location = "#system/users";
     }
     render(){
         return html`
@@ -45,9 +45,10 @@ class CreateUser extends LitElement{
        <h1 class="advice_h2">No one table that can be empty. <br> Please fill all tables!!!</h1>
        </div>
         <div class="section">
-            <img class="back" src="/static/images/icons/icons8-login-100-3.png" alt="back" @click=${this._goBack}/>
             <h3>system users</h3>
-            <h2>Add New User</h2>
+            <h2>
+            <img class="back" src="/static/images/icons/icons8-login-100-3.png" alt="back" @click=${this._goBack}/>
+            Add New User</h2>
             <h5>Create a new user account.</h5>
             <div class="form_section">
             <form action="">

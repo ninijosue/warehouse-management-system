@@ -183,3 +183,43 @@ h4{
     font-size: 14px;
     margin-top: 2%;
 }
+
+@media screen and(max-width: 1170px){
+    .section{
+        width: 61%;
+    }
+}
+@media screen and(max-width: 910px){
+    .section{
+        width: 61%;
+        width: 79%;
+        left: calc(var(--nav-width) + 3%);
+    }
+   
+}
+@media screen and(max-width: 700px){
+    .section{
+        width: 65%;
+    }
+    .add_new{
+        width: 16%;
+        right: 27%;
+    }
+    .remove{
+        width: 16%;
+    }
+    h5{
+        position: absolute;
+        top: 10%;
+        margin: auto;
+        left: 8%;
+    }
+    .back{
+        width: 58%;
+        height: auto;
+        left: -74%;
+    }
+    h2{
+        left: 20%;
+    }
+}
