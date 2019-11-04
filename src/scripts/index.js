@@ -44,6 +44,8 @@ import { LitElement } from "lit-element";
 import { Print } from './components/search-date-info-to-print';
 import { DeliveredListSearchMonth } from './components/delivered-list-search-month';
 import { ExpenseClicked } from './components/expense-clicked';
+import { ChooseFile } from './components/choose-file';
+
 
 
 
@@ -92,6 +94,7 @@ customElements.define('user-well-created', UserWellCreated);
 customElements.define('print-list-of-entredata-inventory', Print);
 customElements.define('delivered-list-search-search-month', DeliveredListSearchMonth);
 customElements.define('expense-clicked', ExpenseClicked);
+customElements.define('choose-file', ChooseFile)
 
 
 
@@ -136,8 +139,9 @@ class MainSection extends LitElement{
     const clientInfo = "inventory/choooseClient/clientInfo";
     const choooseClientInventory = "inventory/chooseClient";
     const sectionOn = this.activeSection;
+
+
     //decide if the fixedRirght will be displayed of not
-    
      if (sectionOn == dashboard ) {
       var turnOff = this.displayOff;
       var turnOffFixedRight = turnOff;
@@ -190,8 +194,10 @@ class MainSection extends LitElement{
       <delivered-list-search-search-month class="main-section" active=${"deliver/delivered-month-search" == this.activeSection}></delivered-list-search-search-month>
       <delivered-list class="main-section" active=${"deliver/delivered-month-search/list" == this.activeSection}></delivered-list>
       <expense-clicked class="main-section" active=${"expense" == this.activeSection}></expense-clicked>
+      <choose-file class="main-section" active=${"choose-file" == this.activeSection}></choose-file>
     </div>
   <bottom-bar></bottom-bar>
+
     `;
   }
 }

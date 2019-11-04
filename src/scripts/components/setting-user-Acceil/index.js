@@ -118,6 +118,7 @@ class Users extends LitElement{
                     <td  @click=${this._userProfil}>${user.Name}</td>
                     <td>${user.action}
                     <img class="go" src="/static/images/icons/go.png" alt="go"/>
+                    
                     </td>
                 </tr>
                     `

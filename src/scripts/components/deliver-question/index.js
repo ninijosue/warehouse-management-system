@@ -10,8 +10,6 @@ class SaveQuestion extends LitElement{
     constructor(){
         super();
         
-        
-        
     }
    
     
