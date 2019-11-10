@@ -210,3 +210,12 @@ h2{
         left: 28%;
     }
 }
+@media screen and(max-width: 450px){
+    .receiving{
+        width: 93%;
+        left: calc(var(--nav-width) + 2%);
+    }
+    .advice{
+        width: 60%;
+    }
+}

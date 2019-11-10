@@ -38,14 +38,10 @@ class UserAccount extends LitElement{
             }
         })
     }
-    chooseFile(){
-        window.location = "#choose-file";
-        
-    }
+   
     render(){
         return html`
         <div class="user_profile">
-            <img class="change_photo" @click=${this.chooseFile} src="/static/images/icons/photochange.png"/>
             <img class="profil_img" src=${this.picture} alt="image of profile"/>
             <h3>${this.name}</h3>
             <h5>bajustone@gmail.com</h5>

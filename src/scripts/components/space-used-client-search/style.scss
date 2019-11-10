@@ -189,3 +189,25 @@ h2{
         left: 4%;
     }
 }
+@media screen and(max-width: 450px){
+    .sammary_input_section{
+        width: 100%;
+        left: calc(var(--nav-width) + 1%);
+    }
+    .advice{
+        width: 60%;
+        left: 20%;
+        height: 7%;
+        top: 6%;
+    }
+    img{
+        width: 32%;
+        left: -40%;
+    }
+    img{
+        width: 32%;
+        left: -40%;
+    }
+
+}
+

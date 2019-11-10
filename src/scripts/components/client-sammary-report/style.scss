@@ -150,4 +150,10 @@ h2{
         margin-top: 32%;
     }
 }
+@media screen and(max-width: 450px){
+    .section{
+        width: 92%;
+        left: calc(var(--nav-width) + 3%);
+    }
+}
 

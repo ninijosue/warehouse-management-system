@@ -53,26 +53,20 @@ class ExpenseClicked extends LitElement{
         <form action="">
       
         <input class="input1" name="expense1" type="text" placeholder="expense' name">
-        <hr class="under_input1">
 
         <input class="input2" name="amount1" type="number" placeholder="amount of money">
-        <hr class="under_input2">
 
         
         <input class="input3" name="expense2" type="text" placeholder="expense' name">
-        <hr class="under_input3">
      
   
         <input class="input4" name="amount2" type="number" placeholder="amount of money">
-        <hr class="under_input4">
        
         
         <input class="input5" name="expense3" type="text" placeholder="expense' name">
-        <hr class="under_input5">
         
         
         <input class="input6" name="amount3" type="number" placeholder="amount of money">
-        <hr class="under_input6">
        
         
         </form>

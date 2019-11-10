@@ -198,3 +198,8 @@ input::placeholder{
         font-size: 16px;
     }
 }
+@media screen and(max-width: 450px){
+    .section{
+        width: 91%;
+    }
+}

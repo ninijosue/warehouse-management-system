@@ -130,3 +130,28 @@ h5{
     }
 
 }
+@media screen and(max-width: 450px){
+    .total_space{
+        width: 84%;
+        top: 12%;
+    }
+    .space_used{
+        top: 28%;
+        width: 84%;
+    }
+    .remaining_space{
+        top: 44%;
+        width: 84%;
+    }
+    .clients{
+        top: 60%;
+        width: 84%;
+    }
+    .expired_bonds{
+        top: 76%;
+        width: 84%;
+    }
+    h4{
+        top: 6%;
+    }
+}

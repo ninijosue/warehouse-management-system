@@ -82,4 +82,13 @@ h3{
         font-size: 28px;
     }
 }
+@media screen and(max-width: 450px){
+    .report{
+        width: 91%;
+    }
+    .h2_report{
+        width: 45%;
+        left: 26%;
+    }
+}
 

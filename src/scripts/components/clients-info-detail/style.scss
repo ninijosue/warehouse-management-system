@@ -183,3 +183,8 @@ tr td{
         top: 5%;
     }
 }
+@media screen and(max-width: 450px){
+    .client_info_section{
+        width: 93%;
+    }
+}

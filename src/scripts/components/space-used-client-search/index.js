@@ -31,7 +31,8 @@ class SpaceUsedClientSearch extends LitElement{
             
         }
         else{
-            window.location = "#report/space-used/info"
+            window.location = "#report/space-used/info";
+            this.inputSearch.value = "";
         }
     }
  

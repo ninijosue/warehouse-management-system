@@ -53,3 +53,9 @@ main-section{
         transition: 0.4s all;
     }
 }
+@media screen and(max-width: 450px){
+    :root{
+        --nav-width: 1%;
+        transition: 0.4s all;
+    }
+}

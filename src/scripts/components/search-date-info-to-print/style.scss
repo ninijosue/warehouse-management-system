@@ -183,3 +183,9 @@ h2 {
            margin-top: 7%;
        }
 }
+@media screen and(max-width: 450px){
+    .sammary_input_section{
+        width: 100%;
+        left: calc(var(--nav-width) + 1%);
+    }
+}

@@ -26,3 +26,45 @@ ul{
 
     }
 }
+@media screen and(max-width: 450px){
+    :host{
+        width: 209px;
+        position: absolute;
+        top: 64px;
+        height: calc(100% - 128px);
+        z-index: 4;
+        color: #ffffff;
+        display: block;
+        
+    }
+    ul{
+        top: 14%;
+        position: absolute;
+    }
+    .hide{
+        display: none;
+    }
+
+    .slide_on{
+        animation-name: slide_on;
+        animation-delay: 0s;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
+    }
+    
+    @keyframes slide_on{
+       0% {transform: translateX(-300px);} 
+       100% {transform: translateX(0px);}
+    }
+    .slide_end{
+        animation-name: slide_end;
+        animation-delay: 0s;
+        animation-duration: 0.8s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    @keyframes slide_end {
+        100% {transform: translateX(-300px);} 
+        0% {transform: translateX(0px);}
+    }
+}

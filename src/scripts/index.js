@@ -44,7 +44,7 @@ import { LitElement } from "lit-element";
 import { Print } from './components/search-date-info-to-print';
 import { DeliveredListSearchMonth } from './components/delivered-list-search-month';
 import { ExpenseClicked } from './components/expense-clicked';
-import { ChooseFile } from './components/choose-file';
+import { Slider } from './components/sliderBtn';
 
 
 
@@ -94,7 +94,7 @@ customElements.define('user-well-created', UserWellCreated);
 customElements.define('print-list-of-entredata-inventory', Print);
 customElements.define('delivered-list-search-search-month', DeliveredListSearchMonth);
 customElements.define('expense-clicked', ExpenseClicked);
-customElements.define('choose-file', ChooseFile)
+customElements.define('show-nav', Slider)
 
 
 
@@ -165,7 +165,7 @@ class MainSection extends LitElement{
     <top-bar>
     <user-account class="user-account" name="BAHATI" avatar=""></user-account>
     </top-bar>
-    <nav-section></nav-section>
+    <nav-section class="slide_end hide"></nav-section>
     <div id="main_section" class="main-one"  current-section="${this.activeSection}">
       <dashboard-info class="main-section" active=${"dashboard" == this.activeSection} totalSpace="1000" spaceUsed="700" remaingSpace="300" clients="150" expiredBonds="50" ></dashboard-info>
       <receive-goods class="main-section" active=${"receiving" == this.activeSection}></receive-goods> 
@@ -194,7 +194,6 @@ class MainSection extends LitElement{
       <delivered-list-search-search-month class="main-section" active=${"deliver/delivered-month-search" == this.activeSection}></delivered-list-search-search-month>
       <delivered-list class="main-section" active=${"deliver/delivered-month-search/list" == this.activeSection}></delivered-list>
       <expense-clicked class="main-section" active=${"expense" == this.activeSection}></expense-clicked>
-      <choose-file class="main-section" active=${"choose-file" == this.activeSection}></choose-file>
     </div>
   <bottom-bar></bottom-bar>
 

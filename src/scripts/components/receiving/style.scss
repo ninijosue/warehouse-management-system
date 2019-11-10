@@ -210,4 +210,17 @@ h2 {
        margin-top: 7%;
    }
 }
+@media screen and(max-width: 450px){
+    .receiving{
+        width: 86%;
+    }
+    .btn-save{
+        width: 50%;
+        left: 25%;
+    }
+    .advice{
+        width: 60%;
+        left: 20%;
+    }
+}
 

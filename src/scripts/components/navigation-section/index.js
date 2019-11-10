@@ -1,5 +1,4 @@
 import {LitElement, html, css, unsafeCSS} from "lit-element";
-import {render} from "lit-html";
 import styles from "./style.scss";
 import navigationItems from "../../navigation-list";
 
@@ -23,9 +22,7 @@ class navigation extends LitElement{
         return html`
        <ul>
            ${this.items.map((item) =>{
-               return html`<list-item  name="${item.name}" icon="${item.icon}">${item.title}</list-item>`;
-
-
+               return html`<list-item   name="${item.name}" icon="${item.icon}">${item.title}</list-item>`;
            })}
        
        </ul>

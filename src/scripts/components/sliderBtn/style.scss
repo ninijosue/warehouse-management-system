@@ -1,0 +1,27 @@
+.slider{
+    width: 12%;
+    height: 74%;
+    position: absolute;
+    top: 27%;
+    left: 4%;
+    cursor: pointer;
+    opacity: 0;
+}
+.bar{
+    width: 90%;
+    height: 7%;
+    background-color: var(--main-blue);
+    position: absolute;
+    border-radius: 9px;
+}
+.bar2{
+    top: 24%;
+}
+.bar3{
+    top: 50%;
+}
+@media screen and(max-width: 450px){
+    .slider{
+        opacity: 1;
+    }
+}

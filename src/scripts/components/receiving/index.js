@@ -28,7 +28,12 @@ class receiving extends LitElement{
             }, 6000);
         }
         else{
-
+            this.clientName.value = "";
+            this.goodName.value = "";
+            this.quantity.value = "";
+            this.bondValue.value = "";
+            this.periodTime.value = "";
+            this._date.value = ""
         }
     }
 

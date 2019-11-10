@@ -80,3 +80,12 @@ h3{
         width: 69%;
     }
 }
+@media screen and(max-width: 450px){
+    .location_bg{
+        width: 93%;
+        left: calc(var(--nav-width) + 1%);
+    }
+    h2{
+        font-size: 18%;
+    }
+}

@@ -6,7 +6,6 @@
     background-color: #3B3B3B;
     border: 2px solid #1DB6CE;
     top: 15%;
-    z-index: 3;
     position: absolute;
     font-size: 18px;
     color: #ffffff;
@@ -43,7 +42,6 @@
     background-color: #3B3B3B;
     border: 2px solid  var(--main-yellow);
     top: 46%;
-    z-index: 3;
     position: absolute;
     font-size: 18px;
     color: #ffffff;
@@ -100,5 +98,13 @@
     }
     .h2_space{
         font-size: 19;
+    }
+}
+@media screen and(max-width: 450px){
+    .report{
+        width: 92%;
+    }
+    .space{
+        width: 92%;
     }
 }

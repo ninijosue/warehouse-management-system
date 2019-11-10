@@ -9,3 +9,9 @@
     z-index: 1;
     display: block;
 }
+
+@media screen and(max-width: 450px){
+    :host{
+        width: 100%;
+    }
+}

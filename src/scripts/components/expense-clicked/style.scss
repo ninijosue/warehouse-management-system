@@ -13,7 +13,7 @@
     border-top-right-radius: 6px;
     position: absolute;
     width: 56%;
-    height: 67%;
+    height: 66%;
     
 }
 
@@ -83,73 +83,28 @@ input::placeholder{
     top: 44%;
     left: 5%;
 }
-
-.under_input1{
-    top: 48%;
-    left: 5.8%;
-    
-}
-
 .input2{
     top: 44%;
     right: 5%;
 }
-.under_input2{
-    top: 48%;
-    right: 8%;
-}
-
 .input3{
     top: 58%;
     left: 5%;
 }
-
-.under_input3{
-    top: 62%;
-    left: 5.8%;
-}
-
 .input4{
     top: 58%;
     right: 5%
 }
-
-.under_input4{
-    top: 62%;
-    right: 8%;
-}
-
 .input5{
     top: 71%;
     left: 5%;
 }
-
-.under_input5{
-    top: 75%;
-    left: 5.8%;
-}
-
 .input6{
     top: 71%;
     right: 5%;
 }
 
-.under_input6{
-    top: 75%;
-    right: 8%;
-}
 
-
-
-hr {
-    width: 35%;
-    background-color: #B2B2B2;
-    height: 1px;
-    position: absolute;
-    z-index: 3;
-    border: none;
-    
-}
 
 button {
     position: absolute;
@@ -261,5 +216,11 @@ h6 {
     }
     .delete{
         left: 58%;
+    }
+}
+@media screen and(max-width: 450px){
+    .expense{
+        width: 91%;
+        left: calc(var(--nav-width) + 3%);
     }
 }
