@@ -1,2 +1,2 @@
 # kwaco-wms
-Wharehose managment system
+Wharehouse managment system
